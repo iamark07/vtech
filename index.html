@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- scroll animation -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/fevicon.webp" type="image/png" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- owl caraousel link-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <title>VTECH EDUCATION</title>
+
+</head>
+
+<body class="overflow-x-hidden relative">
+
+    <!-- Navbar section-->
+    <header id="site-header" class="fixed py-4 w-full top-0 z-50 transition-all duration-200">
+        <div class="container mx-auto px-4 sm:px-6 md:px-10">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex flex-col justify-center items-center leading-tight"
+                    style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
+                    <h2 class="text-3xl text-[#f4e730] font-extrabold tracking-wide">VTECH</h2>
+                    <span class="text-sm text-black font-light -mt-1">Education</span>
+                    <!-- <img src="assets/img/logo.png" alt="" class="w-24 md:w-44"> -->
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-8 text-black text-[13px]">
+                    <a href="#" class="hover:text-blue-400 transition-all duration-200">Home</a>
+                    <a href="#" class="hover:text-blue-400 transition-all duration-200">About</a>
+
+                    <!-- Courses Dropdown -->
+                    <div class="group relative">
+                        <button class="flex items-center gap-1 hover:text-blue-400 transition-all">
+                            Courses <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <div class="absolute hidden group-hover:block pt-3">
+                            <div
+                                class="bg-white text-black shadow-xl py-3 w-60 rounded-xl border border-gray-100 space-y-1">
+                                <a href="#"
+                                    class="flex items-center gap-2 px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition rounded-md">
+                                    <i class="ri-computer-line text-blue-500"></i> IT Programs
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-2 px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition rounded-md">
+                                    <i class="ri-calculator-line text-blue-500"></i> E-Accounting
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-2 px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition rounded-md">
+                                    <i class="ri-bar-chart-box-line text-blue-500"></i> Basic To Advance
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-2 px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition rounded-md">
+                                    <i class="ri-flashlight-line text-blue-500"></i> Short Term Courses
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-2 px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition rounded-md">
+                                    <i class="ri-macbook-line text-blue-500"></i> NIELIT
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-2 px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition rounded-md">
+                                    <i class="ri-award-line text-blue-500"></i> Diploma
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="hover:text-blue-400 transition-all duration-200">Team</a>
+
+                    <!-- Gallery Dropdown -->
+                    <div class="group relative">
+                        <button class="flex items-center gap-1 hover:text-blue-400 transition-all">
+                            Gallery <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <div class="absolute hidden pt-3 group-hover:block">
+                            <div
+                                class="bg-white text-black shadow-xl py-3 w-60 rounded-xl border border-gray-100 space-y-1">
+                                <a href="#"
+                                    class="flex items-center gap-2 px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition rounded-md">
+                                    <i class="ri-hotel-fill text-blue-500"></i> Seminar
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-2 px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition rounded-md">
+                                    <i class="ri-tent-line text-blue-500"></i> Events
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-2 px-4 py-2 hover:bg-blue-100 hover:text-blue-600 transition rounded-md">
+                                    <i class="ri-service-line text-blue-500"></i> Certificate Distribution
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="hover:text-blue-400 transition-all duration-200">Faq</a>
+                    <a href="#" class="hover:text-blue-400 transition-all duration-200">Blog</a>
+                    <a href="#" class="hover:text-blue-400 transition-all duration-200">Contact</a>
+
+                </nav>
+                <!-- Call-to-Action Button -->
+                <a href="#"
+                    class="ml-4 hover:bg-white bg-[#fff024] text-black text-sm font-[400] px-7 py-[8px] rounded-full shadow-md transition-all duration-300">
+                    Enroll Now
+                </a>
+
+                <!-- Mobile Menu Icon -->
+                <button id="menu-toggle" class="lg:hidden text-2xl text-white">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="fixed top-0 -left-full w-full h-screen z-50 transition-all duration-300 flex lg:hidden">
+
+                <!-- Sidebar -->
+                <div class="bg-[#069bff] w-[70%] px-6 pt-6 pb-10 space-y-4 text-white relative">
+                    <!-- Logo -->
+                    <a href="index.html" class="flex items-center mb-4">
+                        <img src="assets/img/logo.png" alt="VTech Logo" class="w-32">
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <div class="flex flex-col gap-5 text-[15px] tracking-wide font-medium pt-10">
+                        <a href="#" class="transition-all duration-200">Home</a>
+                        <a href="#" class="transition-all duration-200">About</a>
+
+                        <!-- Courses Dropdown -->
+                        <div>
+                            <button onclick="toggleDropdown('coursesDropdown')"
+                                class="w-full text-left flex items-center transition-all duration-200">
+                                Courses <i class="ri-arrow-down-s-line ml-3"></i>
+                            </button>
+                            <div id="coursesDropdown"
+                                class="bg-white p-3 mt-2 ml-4 hidden flex flex-col gap-3 text-sm text-black rounded-md">
+                                <a href="#" class="transition">IT Programs</a>
+                                <a href="#" class="transition">E-Accounting</a>
+                                <a href="#" class="transition">Basic To Advance</a>
+                                <a href="#" class="transition">Short Term Courses</a>
+                                <a href="#" class="transition">NIELIT</a>
+                                <a href="#" class="transition">Diploma</a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="transition-all duration-200">Team</a>
+
+                        <!-- Gallery Dropdown -->
+                        <div>
+                            <button onclick="toggleDropdown('franchiseDropdown')"
+                                class="w-full text-left flex items-center transition-all duration-200">
+                                Gallery <i class="ri-arrow-down-s-line ml-3"></i>
+                            </button>
+                            <div id="franchiseDropdown"
+                                class="bg-white p-3 mt-2 ml-4 hidden flex flex-col gap-3 text-sm text-black rounded-md">
+                                <a href="#" class="transition">Seminar</a>
+                                <a href="#" class="transition">Events</a>
+                                <a href="#" class="transition">Certificate Distribution</a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="transition-all duration-200">FAQ</a>
+                        <a href="#" class="transition-all duration-200">Contact</a>
+                    </div>
+
+                    <!-- Close Button -->
+                    <button class="close-menu absolute top-4 right-4 text-white text-2xl hover:text-red-400 transition">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+
+                <!-- Transparent Background -->
+                <div class="close-menu w-[30%] h-screen"></div>
+            </div>
+
+
+    </header>
+
+    <!-- Hero Carousel Section -->
+    <section class="w-full bg-white overflow-hidden relative">
+        <div class="w-full h-full absolute top-0 left-0">
+            <img src="assets/img/new-hero.jpg" alt="" class="w-full h-full object-cover object-[0px_0px] scale-[1.4]">
+        </div>
+        <div class="container mx-auto relative z-10">
+            <div class="w-full text-center px-4 md:px-10 py-64 flex flex-col items-center justify-center">
+                <p class="lg:text-lg font-[500] text-black pb-3">Learn. Grow. Succeed with VTech</p>
+                <h1 class="text-4xl lg:text-5xl font-[500] text-black">
+                    Build Your Career with VTech Education
+                </h1>
+                <div class="flex flex-wrap gap-4 justify-center lg:justify-start mt-7 pb-20">
+                    <a href="#"
+                        class="hover:bg-white bg-[#fff024] shadow-md text-black px-6 py-3 rounded-full text-sm font-[500] transition">
+                        Explore Courses
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Carousel Section -->
+    <section class="w-full relative -mt-[70px] z-20">
+        <div class="container mx-auto px-6 md:px-10">
+            <div class="owl-carousel" id="courses-carousel">
+
+                <!-- Card 1 -->
+                <div
+                    class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-1.jpg');">
+                    <div class="bg-gradient-to-br from-blue-500/90 to-indigo-600/90 absolute top-0 left-0 w-full h-full"></div>
+                    <div class="relative z-10">
+                        <i class="ri-code-s-slash-line text-4xl mb-2"></i>
+                        <h3 class="font-[500]">Web Development</h3>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-2.jpg');">
+                    <div class="bg-gradient-to-br from-green-400/90 to-teal-500/90 absolute top-0 left-0 w-full h-full"></div>    
+                    <div class="relative z-10">
+                        <i class="ri-paint-brush-line text-4xl mb-2"></i>
+                        <h3 class="font-[500]">UI/UX Design</h3>
+                    </div>    
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-3.jpg');">
+                    <div class="bg-gradient-to-br from-yellow-400/90 to-orange-500/90 absolute top-0 left-0 w-full h-full"></div>    
+                    <div class="relative z-10">
+                        <i class="ri-bar-chart-box-line text-4xl mb-2"></i>
+                        <h3 class="font-[500]">Digital Marketing</h3>
+                    </div>    
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-4.jpg');">
+                    <div class="bg-gradient-to-br from-pink-500/90 to-red-500/90 absolute top-0 left-0 w-full h-full"></div>    
+                    <div class="relative z-10">
+                        <i class="ri-brain-line text-4xl mb-2"></i>
+                        <h3 class="font-[500]">AI & ML</h3>
+                    </div>    
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-5.jpg');">
+                    <div class="bg-gradient-to-br from-purple-500/90 to-fuchsia-600/90 absolute top-0 left-0 w-full h-full"></div>    
+                    <div class="relative z-10">
+                        <i class="ri-smartphone-line text-4xl mb-2"></i>
+                        <h3 class="font-[500]">Mobile App Dev</h3>
+                    </div>    
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-6.jpg');">
+                    <div class="bg-gradient-to-br from-sky-500/90 to-cyan-500/90 absolute top-0 left-0 w-full h-full"></div>    
+                    <div class="relative z-10">
+                        <i class="ri-cloud-line text-4xl mb-2"></i>
+                        <h3 class="font-[500]">Cloud Computing</h3>
+                    </div>    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <div class="container mx-auto py-16 px-6 md:px-10">
+            <div class="text-center mb-12">
+                <p class="text-red-600 tracking-widest font-semibold mb-2">LEARN NEW SKILLS</p>
+                <h2 class="text-4xl md:text-5xl font-bold">
+                    <span class="text-gray-800">Popular</span> <span class="text-gray-500">Courses.</span>
+                </h2>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+
+                
+                <div class="bg-white shadow-xl shadow-gray-900 rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="assets/img/courses/PYTHON.jpg" alt="Tally GST"
+                        class="w-full p-5 object-cover">
+                    <div class="p-5">
+                        <p class="text-red-600 font-semibold text-sm">TALLY + GST</p>
+                        <div class="flex items-center text-yellow-400 text-lg mb-1">★★★★★</div>
+                        <h3 class="text-lg font-[500] text-gray-800 mb-3">Tally + GST</h3>
+                        <div class="flex gap-2 text-sm">
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-gray-600">Duration</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-800 font-medium">2-3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white shadow-xl shadow-gray-900 rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="assets/img/courses/PYTHON.jpg" alt="Advance Excel"
+                        class="w-full p-5 object-cover">
+                    <div class="p-5">
+                        <p class="text-red-600 font-semibold text-sm">ADVANCE EXCEL</p>
+                        <div class="flex items-center text-yellow-400 text-lg mb-1">★★★★★</div>
+                        <h3 class="text-lg font-[500] text-gray-800 mb-3">Advance Excel</h3>
+                        <div class="flex gap-2 text-sm">
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-gray-600">Duration</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-800 font-medium">1.5 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="bg-white shadow-xl shadow-gray-900 rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="assets/img/courses/PYTHON.jpg" alt="PHP Web Dev"
+                        class="w-full p-5 object-cover">
+                    <div class="p-5">
+                        <p class="text-red-600 font-semibold text-sm">PHP WEB DEVELOPMENT</p>
+                        <div class="flex items-center text-yellow-400 text-lg mb-1">★★★★★</div>
+                        <h3 class="text-lg font-[500] text-gray-800 mb-3">PHP Web Development</h3>
+                        <div class="flex gap-2 text-sm">
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-gray-600">Duration</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-800 font-medium">3 Months</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#courses-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: false,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 5 }
+                }
+            });
+        });
+    </script>
+
+
+
+    <!-- custom script link -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
