@@ -33,18 +33,19 @@
 
 </head>
 
-<body class="overflow-x-hidden relative">
+<body class="overflow-x-hidden bg-[#f9f9f9] relative">
 
     <!-- Navbar section-->
-    <header id="site-header" class="fixed py-4 w-full top-0 z-50 transition-all duration-200">
+    <header id="site-header" class="fixed backdrop-blur-md bg-black/30 md:bg-transparent py-4 w-full top-0 z-50 transition-all duration-300">
         <div class="container mx-auto px-4 sm:px-6 md:px-10">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <a href="index.html" class="flex flex-col justify-center items-center leading-tight"
                     style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
-                    <h2 class="text-3xl text-[#f4e730] font-extrabold tracking-wide">VTECH</h2>
-                    <span class="text-sm text-black font-light -mt-1">Education</span>
-                    <!-- <img src="assets/img/logo.png" alt="" class="w-24 md:w-44"> -->
+                    <!-- <h2 class="text-3xl text-[#f4e730] font-extrabold tracking-wide">VTECH</h2>
+                    <span class="text-sm text-black font-light -mt-1">Education</span> -->
+                    <img id="header_logo" src="assets/img/logo.png" alt=""
+                        class="transition-all duration-300 w-24 md:w-44">
                 </a>
 
                 <!-- Desktop Menu -->
@@ -121,7 +122,7 @@
                 </nav>
                 <!-- Call-to-Action Button -->
                 <a href="#"
-                    class="ml-4 hover:bg-white bg-[#fff024] text-black text-sm font-[400] px-7 py-[8px] rounded-full shadow-md transition-all duration-300">
+                    class="hidden lg:block ml-4 hover:bg-white bg-[#fff024] text-black text-sm font-[400] px-7 py-[8px] rounded-full shadow-md transition-all duration-300">
                     Enroll Now
                 </a>
 
@@ -197,19 +198,21 @@
     </header>
 
     <!-- Hero Carousel Section -->
-    <section class="w-full bg-white overflow-hidden relative">
+    <section class="w-full overflow-hidden relative">
         <div class="w-full h-full absolute top-0 left-0">
-            <img src="assets/img/new-hero.jpg" alt="" class="w-full h-full object-cover object-[0px_-40px] scale-[1.4]">
+            <img src="assets/img/new-hero.jpg" alt="" class="w-full h-full object-cover object-center lg:object-[0px_-40px] scale-[1.4]">
+        </div>
+        <div class="w-full h-full absolute top-0 left-0 bg-black/[rgb(0,0,0,.19)]">
         </div>
         <div class="container mx-auto relative z-10">
             <div class="w-full text-center px-4 md:px-10 py-64 flex flex-col items-center justify-center">
                 <p class="lg:text-lg font-[500] text-black pb-3">Learn. Grow. Succeed with VTech</p>
-                <h1 class="text-4xl lg:text-5xl font-[500] text-black">
+                <h1 class="text-2xl lg:text-5xl font-[500] text-black">
                     Build Your Career with VTech Education
                 </h1>
                 <div class="flex flex-wrap gap-4 justify-center lg:justify-start mt-7 pb-20">
                     <a href="#"
-                        class="hover:bg-white bg-[#fff024] shadow-md text-black px-6 py-3 rounded-full text-sm font-[500] transition">
+                        class="hover:bg-white bg-[#fff024] shadow-md text-black px-6 py-3 rounded-full text-xs md:text-sm font-[500] transition">
                         Explore Courses
                     </a>
                 </div>
@@ -223,9 +226,11 @@
             <div class="owl-carousel" id="courses-carousel">
 
                 <!-- Card 1 -->
-                <div
-                    class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-1.jpg');">
-                    <div class="bg-gradient-to-br from-blue-500/90 to-indigo-600/90 absolute top-0 left-0 w-full h-full"></div>
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-1.jpg');">
+                    <div
+                        class="bg-gradient-to-br from-blue-500/90 to-indigo-600/90 absolute top-0 left-0 w-full h-full">
+                    </div>
                     <div class="relative z-10">
                         <i class="ri-code-s-slash-line text-4xl mb-2"></i>
                         <h3 class="font-[500]">Web Development</h3>
@@ -233,114 +238,261 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div
-                    class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-2.jpg');">
-                    <div class="bg-gradient-to-br from-green-400/90 to-teal-500/90 absolute top-0 left-0 w-full h-full"></div>    
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-2.jpg');">
+                    <div class="bg-gradient-to-br from-green-400/90 to-teal-500/90 absolute top-0 left-0 w-full h-full">
+                    </div>
                     <div class="relative z-10">
                         <i class="ri-paint-brush-line text-4xl mb-2"></i>
                         <h3 class="font-[500]">UI/UX Design</h3>
-                    </div>    
+                    </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div
-                    class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-3.jpg');">
-                    <div class="bg-gradient-to-br from-yellow-400/90 to-orange-500/90 absolute top-0 left-0 w-full h-full"></div>    
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-3.jpg');">
+                    <div
+                        class="bg-gradient-to-br from-yellow-400/90 to-orange-500/90 absolute top-0 left-0 w-full h-full">
+                    </div>
                     <div class="relative z-10">
                         <i class="ri-bar-chart-box-line text-4xl mb-2"></i>
                         <h3 class="font-[500]">Digital Marketing</h3>
-                    </div>    
+                    </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-4.jpg');">
-                    <div class="bg-gradient-to-br from-pink-500/90 to-red-500/90 absolute top-0 left-0 w-full h-full"></div>    
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-4.jpg');">
+                    <div class="bg-gradient-to-br from-pink-500/90 to-red-500/90 absolute top-0 left-0 w-full h-full">
+                    </div>
                     <div class="relative z-10">
                         <i class="ri-brain-line text-4xl mb-2"></i>
                         <h3 class="font-[500]">AI & ML</h3>
-                    </div>    
+                    </div>
                 </div>
 
                 <!-- Card 5 -->
-                <div
-                    class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-5.jpg');">
-                    <div class="bg-gradient-to-br from-purple-500/90 to-fuchsia-600/90 absolute top-0 left-0 w-full h-full"></div>    
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-5.jpg');">
+                    <div
+                        class="bg-gradient-to-br from-purple-500/90 to-fuchsia-600/90 absolute top-0 left-0 w-full h-full">
+                    </div>
                     <div class="relative z-10">
                         <i class="ri-smartphone-line text-4xl mb-2"></i>
                         <h3 class="font-[500]">Mobile App Dev</h3>
-                    </div>    
+                    </div>
                 </div>
 
                 <!-- Card 6 -->
-                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden" style="background-image: url('assets/img/courses/course-6.jpg');">
-                    <div class="bg-gradient-to-br from-sky-500/90 to-cyan-500/90 absolute top-0 left-0 w-full h-full"></div>    
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[140px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-6.jpg');">
+                    <div class="bg-gradient-to-br from-sky-500/90 to-cyan-500/90 absolute top-0 left-0 w-full h-full">
+                    </div>
                     <div class="relative z-10">
                         <i class="ri-cloud-line text-4xl mb-2"></i>
                         <h3 class="font-[500]">Cloud Computing</h3>
-                    </div>    
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-        <div class="container mx-auto py-16 px-6 md:px-10">
-            <div class="text-center mb-12">
-                <p class="text-red-600 tracking-widest font-semibold mb-2">LEARN NEW SKILLS</p>
-                <h2 class="text-4xl md:text-5xl font-bold">
-                    <span class="text-gray-800">Popular</span> <span class="text-gray-500">Courses.</span>
+    <section class="py-28 bg px-6 md:px-10">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-7 gap-14 md:gap-5 lg:gap-10">
+
+            <!-- About Us Left Side -->
+            <div class="space-y-6 md:col-span-4">
+                <!-- Tag -->
+                <span
+                    class="inline-block bg-red-100 text-red-600 text-xs font-[500] px-3 py-1 rounded-full tracking-widest uppercase">About
+                    Us</span>
+
+                <!-- Heading -->
+                <h2 class="text-3xl lg:text-4xl font-[600] text-gray-900 leading-tight">
+                    We are working Since 2005
                 </h2>
+
+                <!-- Intro Paragraph -->
+                <p class="text-gray-700 leading-relaxed text-[16px] lg:text-[18px]">
+                    We stand as a pioneering Computer Academy, consistently revolutionizing the landscape of IT education through innovative and affordable courses.
+                </p>
+
+                <!-- Highlight Box: Why Choose Us -->
+                <div class="bg-gray-50 border-l-4 border-red-500 p-4 rounded-lg shadow-sm w-fit">
+                    <h3 class="text-lg font-semibold text-red-600 mb-1">Why Choose Us?</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
+                        <li>Professional and Experienced since 2005</li>
+                        <li>We hold association with MSMEs (Government of India Ministry)</li>
+                        <li>More than 35000 students are trained</li>
+                    </ul>
+                </div>
+                <p class="text-gray-700 leading-relaxed text-[14px] lg:text-[15px]">
+                    The institute ensures that graduates are well prepared to navigate the dynamic landscape of IT. We also foster an environment of Continuous Growth and Innovation.
+                </p>
+
+                <!-- Mission & Vision Grid -->
+                <!-- <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl shadow-md p-4 border border-gray-100 hover:shadow-lg transition">
+                        <h4 class="font-semibold text-gray-800 mb-1"><i class="ri-focus-3-line text-red-500 mr-1"></i>
+                            Our Mission</h4>
+                        <p class="text-sm text-gray-600">To provide accessible, practical, and certified IT education to
+                            every aspiring learner.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-4 border border-gray-100 hover:shadow-lg transition">
+                        <h4 class="font-semibold text-gray-800 mb-1"><i class="ri-eye-line text-blue-500 mr-1"></i> Our
+                            Vision</h4>
+                        <p class="text-sm text-gray-600">To be the most trusted institute in India producing job-ready
+                            professionals.</p>
+                    </div>
+                </div> -->
+
+                <!-- Feature Grid (unchanged but spaced well) -->
+                <div class="grid lg:grid-cols-2 gap-6 pt-2">
+                    <div class="flex items-start space-x-3">
+                        <div
+                            class="bg-yellow-100 text-yellow-600 min-w-12 min-h-12 flex items-center justify-center rounded-full">
+                            <i class="ri-graduation-cap-fill text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-[600] text-gray-800">Govt. Certified Courses</h4>
+                            <p class="text-sm text-gray-600">Approved by MSME – learn with trust.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="bg-red-100 text-red-600 min-w-12 min-h-12 flex items-center justify-center rounded-full">
+                            <i class="ri-lightbulb-flash-fill text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-[600] text-gray-800">Practical Learning</h4>
+                            <p class="text-sm text-gray-600">Hands-on projects, real-time tasks.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="bg-blue-100 text-blue-600 min-w-12 min-h-12 flex items-center justify-center rounded-full">
+                            <i class="ri-briefcase-4-fill text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-[600] text-gray-800">Job Assistance</h4>
+                            <p class="text-sm text-gray-600">Placement support for top IT companies.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div
+                            class="bg-green-100 text-green-600 min-w-12 min-h-12 flex items-center justify-center rounded-full">
+                            <i class="ri-star-smile-fill text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-[600] text-gray-800">Student Satisfaction</h4>
+                            <p class="text-sm text-gray-600">High rating and excellent feedbacks.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="owl-carousel owl-theme">
 
-                
-                <div class="bg-white shadow-xl shadow-gray-900 rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="assets/img/courses/PYTHON.jpg" alt="Tally GST"
-                        class="w-full p-5 object-cover">
-                    <div class="p-5">
-                        <p class="text-red-600 font-semibold text-sm">TALLY + GST</p>
-                        <div class="flex items-center text-yellow-400 text-lg mb-1">★★★★★</div>
-                        <h3 class="text-lg font-[500] text-gray-800 mb-3">Tally + GST</h3>
-                        <div class="flex gap-2 text-sm">
-                            <span class="bg-gray-200 px-3 py-1 rounded-full text-gray-600">Duration</span>
-                            <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-800 font-medium">2-3 Months</span>
-                        </div>
-                    </div>
+            <!-- Registration Form Right Side -->
+            <div class="relative md:col-span-3 bg-white h-fit rounded-2xl shadow-xl border border-gray-100 p-8 xl:p-10">
+
+                <!-- Background Ring -->
+                <div class="absolute -top-6 -right-6 w-24 h-24 bg-yellow-200 opacity-40 rounded-full blur-2xl -z-10">
                 </div>
+                <div class="absolute bottom-0 left-0 w-32 h-32 bg-red-200 opacity-30 rounded-full blur-3xl -z-10"></div>
 
-                
-                <div class="bg-white shadow-xl shadow-gray-900 rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="assets/img/courses/PYTHON.jpg" alt="Advance Excel"
-                        class="w-full p-5 object-cover">
-                    <div class="p-5">
-                        <p class="text-red-600 font-semibold text-sm">ADVANCE EXCEL</p>
-                        <div class="flex items-center text-yellow-400 text-lg mb-1">★★★★★</div>
-                        <h3 class="text-lg font-[500] text-gray-800 mb-3">Advance Excel</h3>
-                        <div class="flex gap-2 text-sm">
-                            <span class="bg-gray-200 px-3 py-1 rounded-full text-gray-600">Duration</span>
-                            <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-800 font-medium">1.5 Months</span>
-                        </div>
-                    </div>
-                </div>
+                <h3 class="text-2xl font-[500] text-gray-900 mb-6">
+                    Register <span class="text-yellow-400 font-[500]">Free</span> Now
+                </h3>
 
-                
-                <div class="bg-white shadow-xl shadow-gray-900 rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="assets/img/courses/PYTHON.jpg" alt="PHP Web Dev"
-                        class="w-full p-5 object-cover">
-                    <div class="p-5">
-                        <p class="text-red-600 font-semibold text-sm">PHP WEB DEVELOPMENT</p>
-                        <div class="flex items-center text-yellow-400 text-lg mb-1">★★★★★</div>
-                        <h3 class="text-lg font-[500] text-gray-800 mb-3">PHP Web Development</h3>
-                        <div class="flex gap-2 text-sm">
-                            <span class="bg-gray-200 px-3 py-1 rounded-full text-gray-600">Duration</span>
-                            <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-800 font-medium">3 Months</span>
-                        </div>
-                    </div>
-                </div>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Full Name"
+                        class="w-full px-4 py-3 border text-sm border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                    <input type="tel" placeholder="Phone Number"
+                        class="w-full px-4 py-3 border text-sm border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                    <input type="email" placeholder="Email Address"
+                        class="w-full px-4 py-3 border text-sm border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                    <select
+                        class="w-full px-4 py-3 border text-sm border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        <option>Select Course</option>
+                        <option>Web Development</option>
+                        <option>Digital Marketing</option>
+                        <option>Data Science</option>
+                    </select>
+                    <textarea rows="3" placeholder="Your Message"
+                        class="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                    <button type="submit"
+                        class="w-full bg-yellow-400 text-sm text-white font-[600] py-3 rounded-lg hover:bg-yellow-500 transition-all">
+                        Submit Registration
+                    </button>
+                </form>
 
+                <!-- Extra Tag -->
+                <p class="text-sm text-gray-500 mt-4 text-center">Limited seats available – don’t miss out!</p>
             </div>
+
         </div>
+    </section>
+
+
+    <div class="container mx-auto py-16 px-6 md:px-10">
+        <div class="text-center mb-12">
+            <p class="text-red-600 tracking-widest font-semibold mb-2">LEARN NEW SKILLS</p>
+            <h2 class="text-4xl md:text-5xl font-bold">
+                <span class="text-gray-800">Popular</span> <span class="text-gray-500">Courses.</span>
+            </h2>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+
+
+            <div
+                class="bg-white shadow-xl shadow-gray-900 rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="assets/img/courses/PYTHON.jpg" alt="Tally GST" class="w-full p-5 object-cover">
+                <div class="p-5">
+                    <p class="text-red-600 font-semibold text-sm">TALLY + GST</p>
+                    <div class="flex items-center text-yellow-400 text-lg mb-1">★★★★★</div>
+                    <h3 class="text-lg font-[500] text-gray-800 mb-3">Tally + GST</h3>
+                    <div class="flex gap-2 text-sm">
+                        <span class="bg-gray-200 px-3 py-1 rounded-full text-gray-600">Duration</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-800 font-medium">2-3 Months</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class="bg-white shadow-xl shadow-gray-900 rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="assets/img/courses/PYTHON.jpg" alt="Advance Excel" class="w-full p-5 object-cover">
+                <div class="p-5">
+                    <p class="text-red-600 font-semibold text-sm">ADVANCE EXCEL</p>
+                    <div class="flex items-center text-yellow-400 text-lg mb-1">★★★★★</div>
+                    <h3 class="text-lg font-[500] text-gray-800 mb-3">Advance Excel</h3>
+                    <div class="flex gap-2 text-sm">
+                        <span class="bg-gray-200 px-3 py-1 rounded-full text-gray-600">Duration</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-800 font-medium">1.5 Months</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class="bg-white shadow-xl shadow-gray-900 rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="assets/img/courses/PYTHON.jpg" alt="PHP Web Dev" class="w-full p-5 object-cover">
+                <div class="p-5">
+                    <p class="text-red-600 font-semibold text-sm">PHP WEB DEVELOPMENT</p>
+                    <div class="flex items-center text-yellow-400 text-lg mb-1">★★★★★</div>
+                    <h3 class="text-lg font-[500] text-gray-800 mb-3">PHP Web Development</h3>
+                    <div class="flex gap-2 text-sm">
+                        <span class="bg-gray-200 px-3 py-1 rounded-full text-gray-600">Duration</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-800 font-medium">3 Months</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     </section> -->
 
 

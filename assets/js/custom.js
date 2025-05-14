@@ -2,10 +2,16 @@
 
 window.addEventListener('scroll', function () {
     const header = document.getElementById('site-header');
+    const des_nav_link = document.querySelector('header nav')
+    const header_logo = document.getElementById('header_logo')
     if (window.scrollY > 50) {
-        header.classList.add('bg-white', 'shadow-md', '!py-3');
+        header.classList.add('!bg-black/30', 'shadow-md', '!py-3');
+        des_nav_link.classList.add('text-white');
+        header_logo.classList.add('md:w-32');
     } else {
-        header.classList.remove('bg-white', 'shadow-md', '!py-3');
+        header.classList.remove('!bg-black/30', 'shadow-md', '!py-3');
+        des_nav_link.classList.remove('text-white');
+        header_logo.classList.remove('md:w-32');
     }
 });
 
