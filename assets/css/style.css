@@ -12,11 +12,13 @@
   scroll-behavior: smooth;
 }
 
+/* header mobile nav section */
 .mobile-menu-nav::-webkit-scrollbar{
   display: none;
 }
 
 
+/* testimonal section */
 .testimonal-carousel .owl-nav{
   position: absolute;
   top: -70px;
@@ -24,5 +26,11 @@
 }
 
 .testimonal-carousel .owl-nav button{
+  background: none !important;
+}
+
+
+/* gallery section */
+.gallery-carousel .owl-nav button{
   background: none !important;
 }
