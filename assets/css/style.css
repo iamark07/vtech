@@ -12,6 +12,10 @@
   scroll-behavior: smooth;
 }
 
+.mobile-menu-nav::-webkit-scrollbar{
+  display: none;
+}
+
 
 .testimonal-carousel .owl-nav{
   position: absolute;

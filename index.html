@@ -15,13 +15,13 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- font awesome cdn link -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- scroll animation -->
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/fevicon.webp" type="image/png" />
+    <link rel="icon" href="assets/img/favicon.ico" type="image/png" />
 
     <!-- custom css link -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -49,7 +49,7 @@
                     <!-- <h2 class="text-3xl text-[#f4e730] font-extrabold tracking-wide">VTECH</h2>
                     <span class="text-sm text-black font-light -mt-1">Education</span> -->
                     <img id="header_logo" src="assets/img/logo.png" alt=""
-                        class="transition-all duration-300 w-24 md:w-44">
+                        class="transition-all duration-300 w-28 md:w-44">
                 </a>
 
                 <!-- Desktop Menu -->
@@ -131,7 +131,7 @@
                 </a>
 
                 <!-- Mobile Menu Icon -->
-                <button id="menu-toggle" class="lg:hidden text-2xl text-white">
+                <button id="menu-toggle" class="lg:hidden text-3xl text-white">
                     <i class="ri-menu-line"></i>
                 </button>
             </div>
@@ -140,25 +140,26 @@
                 class="fixed top-0 -left-full w-full h-screen z-50 transition-all duration-300 flex lg:hidden">
 
                 <!-- Sidebar -->
-                <div class="bg-[#069bff] w-[70%] px-6 pt-6 pb-10 space-y-4 text-white relative">
+                <div class="bg-[#0f172a] w-[70%] px-6 py-6 space-y-4 text-white relative">
                     <!-- Logo -->
                     <a href="index.html" class="flex items-center mb-4">
                         <img src="assets/img/logo.png" alt="VTech Logo" class="w-32">
                     </a>
 
                     <!-- Navigation Links -->
-                    <div class="flex flex-col gap-5 text-[15px] tracking-wide font-medium pt-10">
+                    <div class="mobile-menu-nav flex flex-col gap-5 text-[15px] tracking-wide font-medium py-10 overflow-y-auto border-b border-[#314472]"
+                        style="height: calc(100dvh - 171.646px);">
                         <a href="#" class="transition-all duration-200">Home</a>
                         <a href="#" class="transition-all duration-200">About</a>
 
                         <!-- Courses Dropdown -->
                         <div>
                             <button onclick="toggleDropdown('coursesDropdown')"
-                                class="w-full text-left flex items-center transition-all duration-200">
+                                class="w-full text-left justify-between flex items-center transition-all duration-200">
                                 Courses <i class="ri-arrow-down-s-line ml-3"></i>
                             </button>
                             <div id="coursesDropdown"
-                                class="bg-white p-3 mt-2 ml-4 hidden flex flex-col gap-3 text-sm text-black rounded-md">
+                                class="bg-white p-3 mt-2 ml-4 hidden flex flex-col gap-3 text-xs text-black rounded-md">
                                 <a href="#" class="transition">IT Programs</a>
                                 <a href="#" class="transition">E-Accounting</a>
                                 <a href="#" class="transition">Basic To Advance</a>
@@ -173,11 +174,11 @@
                         <!-- Gallery Dropdown -->
                         <div>
                             <button onclick="toggleDropdown('franchiseDropdown')"
-                                class="w-full text-left flex items-center transition-all duration-200">
+                                class="w-full text-left justify-between flex items-center transition-all duration-200">
                                 Gallery <i class="ri-arrow-down-s-line ml-3"></i>
                             </button>
                             <div id="franchiseDropdown"
-                                class="bg-white p-3 mt-2 ml-4 hidden flex flex-col gap-3 text-sm text-black rounded-md">
+                                class="bg-white p-3 mt-2 ml-4 hidden flex flex-col gap-3 text-xs text-black rounded-md">
                                 <a href="#" class="transition">Seminar</a>
                                 <a href="#" class="transition">Events</a>
                                 <a href="#" class="transition">Certificate Distribution</a>
@@ -187,6 +188,12 @@
                         <a href="#" class="transition-all duration-200">FAQ</a>
                         <a href="#" class="transition-all duration-200">Contact</a>
                     </div>
+
+                    <!-- Call-to-Action Button -->
+                    <a href="#"
+                        class="block text-center hover:bg-white bg-[#fff024] text-black text-sm font-[400] px-7 py-[8px] rounded-full shadow-md transition-all duration-300">
+                        Enroll Now
+                    </a>
 
                     <!-- Close Button -->
                     <button class="close-menu absolute top-4 right-4 text-white text-2xl hover:text-red-400 transition">
@@ -309,7 +316,8 @@
             <!-- Section Heading -->
             <div class="text-center mb-12">
                 <h2 class="text-2xl md:text-4xl font-bold text-gray-800">Explore Our Top Courses</h2>
-                <p class="text-gray-600 mt-2 md:text-lg">Upskill yourself with the most in-demand learning paths carefully
+                <p class="text-gray-600 mt-2 md:text-lg">Upskill yourself with the most in-demand learning paths
+                    carefully
                     crafted by industry experts.</p>
             </div>
 
@@ -641,7 +649,7 @@
             <div class="text-center mb-14 max-w-3xl mx-auto">
                 <h2 class="text-[28px] md:text-4xl font-[500] mb-4 leading-tight">Why Choose <span
                         class="text-[#fff024] font-[500]">VTech</span> ?</h2>
-                <p class="text-lg text-gray-100">We don’t just train students — we transform them into future-ready tech
+                <p class="text-gray-100">We don’t just train students — we transform them into future-ready tech
                     professionals with skills that truly matter.</p>
             </div>
 
@@ -649,8 +657,8 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-16 mx-auto">
                 <!-- Feature 1 -->
                 <div class="text-center group transition-transform duration-300 hover:-translate-y-2">
-                    <div class="text-5xl text-[#fff024] mb-4 group-hover:scale-110 transition">
-                        <i class="ri-graduation-cap-line"></i>
+                    <div class="text-4xl text-[#fff024] mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-graduation-cap"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Industry Expert Trainers</h3>
                     <p class="text-gray-100 text-sm">Learn from professionals working in top MNCs with real-world
@@ -659,8 +667,8 @@
 
                 <!-- Feature 2 -->
                 <div class="text-center group transition-transform duration-300 hover:-translate-y-2">
-                    <div class="text-5xl text-[#fff024] mb-4 group-hover:scale-110 transition">
-                        <i class="ri-briefcase-4-line"></i>
+                    <div class="text-4xl text-[#fff024] mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-briefcase"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">100% Placement Assistance</h3>
                     <p class="text-gray-100 text-sm">Get full support from our dedicated placement cell — interviews,
@@ -669,8 +677,8 @@
 
                 <!-- Feature 3 -->
                 <div class="text-center group transition-transform duration-300 hover:-translate-y-2">
-                    <div class="text-5xl text-[#fff024] mb-4 group-hover:scale-110 transition">
-                        <i class="ri-global-line"></i>
+                    <div class="text-4xl text-[#fff024] mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-earth-asia"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Globally Recognized Certificates</h3>
                     <p class="text-gray-100 text-sm">Boost your career with international certification programs
@@ -679,8 +687,8 @@
 
                 <!-- Feature 4 -->
                 <div class="text-center group transition-transform duration-300 hover:-translate-y-2">
-                    <div class="text-5xl text-[#fff024] mb-4 group-hover:scale-110 transition">
-                        <i class="ri-cpu-line"></i>
+                    <div class="text-4xl text-[#fff024] mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-diagram-project"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Hands-on Project Training</h3>
                     <p class="text-gray-100 text-sm">Work on real-time projects and practical assignments that simulate
@@ -689,8 +697,8 @@
 
                 <!-- Feature 5 -->
                 <div class="text-center group transition-transform duration-300 hover:-translate-y-2">
-                    <div class="text-5xl text-[#fff024] mb-4 group-hover:scale-110 transition">
-                        <i class="ri-timer-flash-line"></i>
+                    <div class="text-4xl text-[#fff024] mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-school"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Flexible Learning Options</h3>
                     <p class="text-gray-100 text-sm">Online or Offline, Weekend or Fast-Track — choose what suits you
@@ -699,8 +707,8 @@
 
                 <!-- Feature 6 -->
                 <div class="text-center group transition-transform duration-300 hover:-translate-y-2">
-                    <div class="text-5xl text-[#fff024] mb-4 group-hover:scale-110 transition">
-                        <i class="ri-team-line"></i>
+                    <div class="text-4xl text-[#fff024] mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-people-group"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Lifelong Mentorship</h3>
                     <p class="text-gray-100 text-sm">Access ongoing support, guidance, and updated resources even after
@@ -710,8 +718,8 @@
                 <!-- Feature 7 -->
                 <div
                     class="text-center group transition-transform duration-300 hover:-translate-y-2 sm:col-span-2 lg:col-span-3">
-                    <div class="text-5xl text-[#fff024] mb-4 group-hover:scale-110 transition">
-                        <i class="ri-shield-check-line"></i>
+                    <div class="text-4xl text-[#fff024] mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-award"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Trusted by 5000+ Learners</h3>
                     <p class="text-gray-100 text-sm">We are rated 4.9/5 by our students and have helped thousands launch
@@ -721,110 +729,126 @@
         </div>
     </section>
 
-    <section class="bg-gray-50">
+    <!-- our best courses section start -->
+    <section class="bg-[#f5f5f5]">
         <div class="max-w-7xl mx-auto px-6 md:px-10 py-32">
-          <div class="text-center mb-16">
-            <p class="text-xl font-[400]">Search Our Courses</p>
-            <h2 class="text-2xl md:text-4xl font-[500] text-gray-800">Browse Our <span class="text-red-500 font-[500]">Best Course.</span></h2>
-          </div>
-      
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Card 1 -->
-            <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
-                 style="background-image: url('assets/img/courses/course-1.jpg');">
-              <div class="bg-gradient-to-br from-blue-500/90 to-indigo-600/90 absolute top-0 left-0 w-full h-full"></div>
-              <div class="relative z-10">
-                <i class="fa-brands fa-java text-4xl mb-2"></i>
-                <h3 class="font-semibold text-lg">Java</h3>
-                <p class="text-sm mt-1">Enrolled Students | 2000</p>
-              </div>
+            <div class="text-center mb-16">
+                <span
+                    class="inline-block bg-red-100 text-red-600 text-xs font-[500] px-5 py-1 rounded-full tracking-widest uppercase mb-3">Search
+                    Our Courses</span>
+                <h2 class="text-2xl md:text-4xl font-[500] text-gray-800">Browse Our <span
+                        class="text-red-500 font-[500]">Best Course</span></h2>
             </div>
-          
-            <!-- Card 2 -->
-            <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
-                 style="background-image: url('assets/img/courses/course-2.jpg');">
-              <div class="bg-gradient-to-br from-pink-500/90 to-red-600/90 absolute top-0 left-0 w-full h-full"></div>
-              <div class="relative z-10">
-                <i class="fa-brands fa-python text-4xl mb-2"></i>
-                <h3 class="font-semibold text-lg">Python</h3>
-                <p class="text-sm mt-1">Enrolled Students | 3500</p>
-              </div>
-            </div>
-          
-            <!-- Card 3 -->
-            <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
-                 style="background-image: url('assets/img/courses/course-3.jpg');">
-              <div class="bg-gradient-to-br from-teal-500/90 to-emerald-600/90 absolute top-0 left-0 w-full h-full"></div>
-              <div class="relative z-10">
-                <i class="ri-bar-chart-line text-4xl mb-2"></i>
-                <h3 class="font-semibold text-lg">Data Analytic</h3>
-                <p class="text-sm mt-1">Enrolled Students | 500</p>
-              </div>
-            </div>
-          
-            <!-- Card 4 -->
-            <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
-                 style="background-image: url('assets/img/courses/course-4.jpg');">
-              <div class="bg-gradient-to-br from-orange-500/90 to-yellow-600/90 absolute top-0 left-0 w-full h-full"></div>
-              <div class="relative z-10">
-                <i class="ri-file-list-3-line text-4xl mb-2"></i>
-                <h3 class="font-semibold text-lg">Tally + GST</h3>
-                <p class="text-sm mt-1">Enrolled Students | 2500</p>
-              </div>
-            </div>
-          
-            <!-- Card 5 -->
-            <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
-                 style="background-image: url('assets/img/courses/course-5.jpg');">
-              <div class="bg-gradient-to-br from-purple-500/90 to-pink-600/90 absolute top-0 left-0 w-full h-full"></div>
-              <div class="relative z-10">
-                <i class="ri-building-line text-4xl mb-2"></i>
-                <h3 class="font-semibold text-lg">Busy</h3>
-                <p class="text-sm mt-1">Enrolled Students | 2000</p>
-              </div>
-            </div>
-          
-            <!-- Card 6 -->
-            <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
-                 style="background-image: url('assets/img/courses/course-6.jpg');">
-              <div class="bg-gradient-to-br from-red-500/90 to-rose-600/90 absolute top-0 left-0 w-full h-full"></div>
-              <div class="relative z-10">
-                <i class="ri-briefcase-4-line text-4xl mb-2"></i>
-                <h3 class="font-semibold text-lg">Business Accounting</h3>
-                <p class="text-sm mt-1">Enrolled Students | 800</p>
-              </div>
-            </div>
-          
-            <!-- Card 7 -->
-            <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
-                 style="background-image: url('assets/img/courses/course-1.jpg');">
-              <div class="bg-gradient-to-br from-sky-500/90 to-cyan-600/90 absolute top-0 left-0 w-full h-full"></div>
-              <div class="relative z-10">
-                <i class="ri-file-excel-2-line text-4xl mb-2"></i>
-                <h3 class="font-semibold text-lg">Basic Excel</h3>
-                <p class="text-sm mt-1">Enrolled Students | 2000</p>
-              </div>
-            </div>
-          
-            <!-- Card 8 -->
-            <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
-                 style="background-image: url('assets/img/courses/course-2.jpg');">
-              <div class="bg-gradient-to-br from-green-500/90 to-lime-600/90 absolute top-0 left-0 w-full h-full"></div>
-              <div class="relative z-10">
-                <i class="ri-google-line text-4xl mb-2"></i>
-                <h3 class="font-semibold text-lg">Google Sheet</h3>
-                <p class="text-sm mt-1">Enrolled Students | 500</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-      
 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-1.jpg');">
+                    <div
+                        class="bg-gradient-to-br from-blue-500/90 to-indigo-600/90 absolute top-0 left-0 w-full h-full">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fa-brands fa-java text-4xl mb-2"></i>
+                        <h3 class="font-semibold text-lg">Java</h3>
+                        <p class="text-sm mt-1">Enrolled Students | 2000</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-2.jpg');">
+                    <div class="bg-gradient-to-br from-pink-500/90 to-red-600/90 absolute top-0 left-0 w-full h-full">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fa-brands fa-python text-4xl mb-2"></i>
+                        <h3 class="font-semibold text-lg">Python</h3>
+                        <p class="text-sm mt-1">Enrolled Students | 3500</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-3.jpg');">
+                    <div
+                        class="bg-gradient-to-br from-teal-500/90 to-emerald-600/90 absolute top-0 left-0 w-full h-full">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="ri-bar-chart-line text-4xl mb-2"></i>
+                        <h3 class="font-semibold text-lg">Data Analytic</h3>
+                        <p class="text-sm mt-1">Enrolled Students | 500</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-4.jpg');">
+                    <div
+                        class="bg-gradient-to-br from-orange-500/90 to-yellow-600/90 absolute top-0 left-0 w-full h-full">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="ri-file-list-3-line text-4xl mb-2"></i>
+                        <h3 class="font-semibold text-lg">Tally + GST</h3>
+                        <p class="text-sm mt-1">Enrolled Students | 2500</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-5.jpg');">
+                    <div
+                        class="bg-gradient-to-br from-purple-500/90 to-pink-600/90 absolute top-0 left-0 w-full h-full">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="ri-building-line text-4xl mb-2"></i>
+                        <h3 class="font-semibold text-lg">Busy</h3>
+                        <p class="text-sm mt-1">Enrolled Students | 2000</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-6.jpg');">
+                    <div class="bg-gradient-to-br from-red-500/90 to-rose-600/90 absolute top-0 left-0 w-full h-full">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="ri-briefcase-4-line text-4xl mb-2"></i>
+                        <h3 class="font-semibold text-lg">Business Accounting</h3>
+                        <p class="text-sm mt-1">Enrolled Students | 800</p>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-1.jpg');">
+                    <div class="bg-gradient-to-br from-sky-500/90 to-cyan-600/90 absolute top-0 left-0 w-full h-full">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="ri-file-excel-2-line text-4xl mb-2"></i>
+                        <h3 class="font-semibold text-lg">Basic Excel</h3>
+                        <p class="text-sm mt-1">Enrolled Students | 2000</p>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="bg-cover bg-center rounded-xl text-white p-6 text-center flex flex-col justify-center items-center w-full h-[160px] relative overflow-hidden"
+                    style="background-image: url('assets/img/courses/course-2.jpg');">
+                    <div class="bg-gradient-to-br from-green-500/90 to-lime-600/90 absolute top-0 left-0 w-full h-full">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="ri-google-line text-4xl mb-2"></i>
+                        <h3 class="font-semibold text-lg">Google Sheet</h3>
+                        <p class="text-sm mt-1">Enrolled Students | 500</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- testimonal section start -->
     <section class="bg-[#f5f5f5] py-20">
         <div class="max-w-7xl mx-auto px-6 md:px-10 text-center">
-            <h2 class="text-4xl font-[600] text-gray-800 mb-3">What Our Students Say</h2>
+            <h2 class="text-2xl md:text-4xl font-[600] text-gray-800 mb-3">What Our Students Say</h2>
             <p class="text-gray-600 mb-12">Real reviews from our achievers across India!</p>
 
             <!-- Owl Carousel Wrapper -->
@@ -931,8 +955,207 @@
     </section>
 
 
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 text-center">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-12">🌟 Success Stories from Our Alumni</h2>
+            <div class="grid md:grid-cols-3 gap-8">
 
+                <!-- Card 1 -->
+                <div class="relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition duration-300 group">
+                    <div class="absolute -top-5 -left-5 bg-indigo-100 p-3 rounded-full">
+                        <svg class="h-6 w-6 text-indigo-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7.17 5.59A4.978 4.978 0 0 0 6 9v4h4v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1h3V4h-3a5.005 5.005 0 0 0-4.83 3.59z" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">“After completing the Web Dev course at VTech, I landed a
+                        full-time job at TCS!”</p>
+                    <div class="font-semibold text-lg text-indigo-700">Rahul Sharma</div>
+                    <div class="text-sm text-gray-500">Frontend Developer at TCS</div>
+                </div>
 
+                <!-- Card 2 -->
+                <div class="relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition duration-300 group">
+                    <div class="absolute -top-5 -left-5 bg-indigo-100 p-3 rounded-full">
+                        <svg class="h-6 w-6 text-indigo-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7.17 5.59A4.978 4.978 0 0 0 6 9v4h4v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1h3V4h-3a5.005 5.005 0 0 0-4.83 3.59z" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">“The hands-on projects and mentorship helped me become
+                        job-ready!”</p>
+                    <div class="font-semibold text-lg text-indigo-700">Anjali Verma</div>
+                    <div class="text-sm text-gray-500">UI Designer at Cognizant</div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition duration-300 group">
+                    <div class="absolute -top-5 -left-5 bg-indigo-100 p-3 rounded-full">
+                        <svg class="h-6 w-6 text-indigo-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7.17 5.59A4.978 4.978 0 0 0 6 9v4h4v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1h3V4h-3a5.005 5.005 0 0 0-4.83 3.59z" />
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">“VTech’s practical training helped me build real-world skills.”
+                    </p>
+                    <div class="font-semibold text-lg text-indigo-700">Aman Joshi</div>
+                    <div class="text-sm text-gray-500">Freelance App Developer</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-10">📸 Life at VTech - Campus & Events</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <!-- Image Card -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="assets/img/courses/course-4.jpg" alt="Campus Event"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-500 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-lg font-semibold">Web Development Bootcamp</p>
+                    </div>
+                </div>
+
+                <!-- Image Card -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="assets/img/courses/course-4.jpg" alt="Seminar"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-500 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-lg font-semibold">Annual Tech Seminar</p>
+                    </div>
+                </div>
+
+                <!-- Image Card -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="assets/img/courses/course-4.jpg" alt="Workshop"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-500 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                        <p class="text-white text-lg font-semibold">Design Thinking Workshop</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0f172a] text-gray-300 pt-16 pb-10">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+
+                <!-- Brand Info -->
+                <div>
+                    <!-- <h2 class="text-2xl font-bold mb-4 text-[#ff0063]">VTech Education</h2> -->
+                    <img src="assets/img/logo.png" class="w-32 md:w-44 mb-5 mx-auto md:mx-0" alt="Footer Logo">
+                    <p class="text-gray-300 text-sm mb-4 text-center md:text-start">
+                        Empowering learners through innovative tech programs and real-world skills.
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-3 mt-4">
+                        <a href="#"
+                            class="w-9 h-9 flex items-center justify-center border border-gray-500 rounded-full hover:bg-[#35b5ff] hover:border-[#35b5ff]">
+                            <i class="ri-facebook-fill text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 flex items-center justify-center border border-gray-500 rounded-full hover:bg-[#ff0063] hover:border-[#ff0063]">
+                            <i class="ri-instagram-line text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 flex items-center justify-center border border-gray-500 rounded-full hover:bg-[#309bff] hover:border-[#309bff]">
+                            <i class="ri-linkedin-fill text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 flex items-center justify-center border border-gray-500 rounded-full hover:bg-[#58c2ff] hover:border-[#58c2ff]">
+                            <i class="ri-twitter-fill text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#" class="hover:text-red-500">HOME</a></li>
+                        <li><a href="#" class="hover:text-red-500">ABOUT US</a></li>
+                        <li><a href="#" class="hover:text-red-500">TEAM</a></li>
+                        <li><a href="#" class="hover:text-red-500">GALLERY</a></li>
+                        <li><a href="#" class="hover:text-red-500">FAQ</a></li>
+                        <li><a href="#" class="hover:text-red-500">BLOG</a></li>
+                        <li><a href="#" class="hover:text-red-500">CONTACT US</a></li>
+                        <li><a href="#" class="hover:text-red-500">TERMS & CONDITIONS</a></li>
+                        <li><a href="#" class="hover:text-red-500">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Courses -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Courses</h3>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#" class="hover:text-red-500">IT PROGRAMS</a></li>
+                        <li><a href="#" class="hover:text-red-500">E-ACCOUNTING</a></li>
+                        <li><a href="#" class="hover:text-red-500">BASIC TO ADVANCE</a></li>
+                        <li><a href="#" class="hover:text-red-500">SHORT TERM COURSES</a></li>
+                        <li><a href="#" class="hover:text-red-500">NIELIT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Enquiry Form -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Enquiry Form</h3>
+                    <form class="space-y-3 bg-white p-4 rounded-xl shadow-lg">
+                        <input type="text" placeholder="Your Name"
+                            class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 text-xs text-gray-700 placeholder:text-gray-700">
+
+                        <input type="text" placeholder="Your Number"
+                            class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 text-xs text-gray-700 placeholder:text-gray-700">
+
+                        <input type="email" placeholder="Email Address"
+                            class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 text-xs text-gray-700 placeholder:text-gray-700">
+
+                        <select
+                            class="w-full px-4 py-2 rounded-md border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-red-500 text-xs">
+                            <option>Select Course</option>
+                            <option>ANDROID</option>
+                            <option>BASIC CODING</option>
+                            <option>BASIC EXCEL</option>
+                            <option>BUSY</option>
+                            <option>DATA ANALYTICS</option>
+                            <option>DOTNET</option>
+                            <option>JAVA</option>
+                            <option>MANAGEMENT INFORMATION SYSTEM(MIS)</option>
+                            <option>PHP WEB DEVELOPMENT</option>
+                            <option>PYTHON</option>
+                            <option>STRUCTURED QUERY LANGUAGE(SQL)</option>
+                            <option>TALLY WITH GST</option>
+                            <option>WORDPRESS</option>
+                        </select>
+
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-red-500 to-yellow-500 hover:from-yellow-500 hover:to-red-500 text-white font-semibold py-2 rounded-md transition duration-300 text-xs">
+                            SUBMIT REQUEST
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div
+                class="border-t border-gray-700 mt-8 pt-4 text-sm flex flex-col sm:flex-row justify-between text-gray-300 text-center md:text-start">
+                <p>&copy; 2025 - www.vtechedu.in. All rights reserved</p>
+                <div
+                    class="flex text-center md:text-start justify-center md:justify-start space-x-4 mt-4 md:mt-2 sm:mt-0">
+                    <a href="#" class="hover:text-white">Privacy & Policy</a>
+                    <a href="#" class="hover:text-white">Term Of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
