@@ -30,108 +30,489 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 
     <title>VTECH EDUCATION - Empowering Minds</title>
 
 </head>
 
-<body class="font-[Inter] bg-[#f8f9fa]">
+<body class="font-[Inter] bg-[#f8f9fa] overflow-x-hidden">
     <!-- Header Section -->
-    <header class="sticky top-0 w-full z-50 bg-gradient-to-tr from-[#ca3f2c] to-[#e15340] backdrop-blur-md border-b border-gray-200 flex items-center justify-between">
-        <nav class="container mx-auto py-5 px-5 md:px-10">
-            <div class="flex items-center justify-between w-full">
-                <div class="flex items-center gap-2">
-                    <div href="/" class="text-2xl font-bold flex items-center gap-3">
-                        <i class="fa-solid fa-graduation-cap text-2xl text-[#ffffff]"></i>
-                        <div class="flex flex-col">
-                            <span class="text-[#ffffff] font-[600]">VTECH</span>
-                            <span class="text-xs text-[#ffffff] font-semibold tracking-wide">Academy Of Computer</span>
-                        </div>
-                    </div>
-                </div>
-                <button class="lg:hidden text-2xl text-white" id="mobile-menu-button">
-                    <i class="ri-menu-line"></i>
-                </button>
+    <header class="main-header">
+        <nav class="header-nav container mx-auto py-3 px-5 md:px-10">
+            <div class="flex items-center gap-2">
+                <a href="/" class="text-2xl font-bold flex items-center gap-3">
+                    <img src="assets/img/logo/logo.png" alt="VTECH Academy of Computer" class="w-32 sm:w-44">
+                </a>
             </div>
+            <button class="lg:hidden text-2xl text-white" id="mobile-menu-button">
+                <i class="ri-menu-line"></i>
+            </button>
         </nav>
-        <div class="absolute top-1/2 -translate-y-1/2 -right-0 hidden lg:flex header-nav-wrapper bg-white/90 rounded-l-full pl-12 pr-16 py-3 items-center shadow-lg shadow-[#ca3f2c]/30 text-sm">
+        <div class="header-nav-wrapper">
             <div class="flex items-center gap-8 uppercase">
-                <a href="#home" class="nav-link font-[500] transition-colors">Home</a>
-                <a href="#about" class="nav-link font-[500] transition-colors">About</a>
-                <a href="#courses" class="nav-link font-[500] transition-colors">Courses</a>
-                <a href="#team" class="nav-link font-[500] transition-colors">Team</a>
-                <a href="#gallery" class="nav-link font-[500] transition-colors">Gallery</a>
-                <a href="#faq" class="nav-link font-[500] transition-colors">Faq</a>
-                <a href="#blog" class="nav-link font-[500] transition-colors">Blog</a>
-                <a href="#contact" class="nav-link font-[500] transition-colors">Contact</a>
-                <div class="pl-4 border-l border-white/20">
-                    <a href="#enroll" class="bg-[#ca3f2c] hover:bg-[#a12e1e] text-[#ffff] px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2">
-                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                        Enroll Now
-                    </a>
-                </div>
+                <a href="#home" class="header-link">Home</a>
+                <a href="#about" class="header-link">About</a>
+                <a href="#courses" class="header-link">Courses</a>
+                <a href="#team" class="header-link">Team</a>
+                <a href="#gallery" class="header-link">Gallery</a>
+                <a href="#faq" class="header-link">Faq</a>
+                <a href="#blog" class="header-link">Blog</a>
+                <a href="#contact" class="header-link">Contact</a>
             </div>
+            <div class="header-divider hidden xl:block">
+                <a href="#counselling" class="btn-primary">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    Free Counseling
+                </a>
+            </div>
+        </div>
+        <!-- Mobile Menu Overlay and Sidebar -->
+        <div class="mobile-menu-overlay"></div>
+        <div class="mobile-menu-bar">
+            <div class="mobile-menu-header">
+                <span class="mobile-menu-title">Menu</span>
+                <button class="mobile-menu-close" id="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <nav class="mobile-menu-links">
+                <a href="#home" class="mobile-menu-link mobile-menu-link-active">Home</a>
+                <a href="#about" class="mobile-menu-link">About</a>
+                <a href="#courses" class="mobile-menu-link">Courses</a>
+                <a href="#team" class="mobile-menu-link">Team</a>
+                <a href="#gallery" class="mobile-menu-link">Gallery</a>
+                <a href="#faq" class="mobile-menu-link">Faq</a>
+                <a href="#blog" class="mobile-menu-link">Blog</a>
+                <a href="#contact" class="mobile-menu-link">Contact</a>
+                <a href="#counselling" class="btn-primary mobile-menu-btn"> <i
+                        class="fa-solid fa-arrow-right-to-bracket"></i> Free Counseling</a>
+            </nav>
         </div>
     </header>
 
+
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Image Slider -->
+        <section class="hero-slider-section">
+            <div class="hero-slider">
+                <div class="hero-slider-overlay"></div>
+                <div class="hero-slide active">
+                    <img src="assets/img/banner/banner-4.jpg" alt="Hero Slide 1" />
+                </div>
+                <div class="hero-slide">
+                    <img src="assets/img/banner/banner-2.jpg" alt="Hero Slide 2" />
+                </div>
+                <div class="hero-slide">
+                    <img src="assets/img/banner/banner-5.jpg" alt="Hero Slide 3" />
+                </div>
+                <div class="container mx-auto relative h-full">
+                    <button class="hero-slider-arrow hero-slider-prev" aria-label="Previous Slide"><i
+                            class="ri-arrow-left-s-line"></i></button>
+                    <button class="hero-slider-arrow hero-slider-next" aria-label="Next Slide"><i
+                            class="ri-arrow-right-s-line"></i></button>
+                    <div class="hero-slider-dots">
+                        <span class="hero-slider-dot active"></span>
+                        <span class="hero-slider-dot"></span>
+                        <span class="hero-slider-dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class=" py-10 lg:py-14 bg-gradient-to-br from-[#fff7f5] via-[#f8f6f4] to-[#ffe5e0]">
+            <div class="container mx-auto px-5 md:px-10">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="highlight-glass-card">
+                        <span class="highlight-glass-icon"><i class="ri-brain-line"></i></span>
+                        <div class="highlight-glass-text">Learn Essential Skills</div>
+                    </div>
+                    <div class="highlight-glass-card">
+                        <span class="highlight-glass-icon"><i class="ri-award-line"></i></span>
+                        <div class="highlight-glass-text">Earn Recognized Certificates</div>
+                    </div>
+                    <div class="highlight-glass-card">
+                        <span class="highlight-glass-icon"><i class="ri-rocket-2-line"></i></span>
+                        <div class="highlight-glass-text">Advance Your Career</div>
+                    </div>
+                    <div class="highlight-glass-card">
+                        <span class="highlight-glass-icon"><i class="ri-star-smile-line"></i></span>
+                        <div class="highlight-glass-text">Master Multiple Domains</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Programs Section (Field-Related SVG/Logo Icons) -->
+        <section class="py-12 bg-[#f8f6f4]">
+            <div class="container mx-auto px-5 md:px-10">
+                <div class="flex items-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800">Explore Top Programs</h2>
+                    <span
+                        class="hidden sm:block ml-4 h-1 w-20 bg-gradient-to-r from-[#ca3f2c] to-[#e15340] rounded"></span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    <!-- 1: MERN Stack + Gen AI -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- MERN Stack  -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/reactivex.svg" />
+                        </span>
+                        <span class="program-title">MERN STACK + GEN AI</span>
+                    </div>
+                    <!-- 2: Cyber Security + Gen AI -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Shield/Lock Icon -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">CYBER SECURITY + GEN AI</span>
+                    </div>
+                    <!-- 3: Java Expert -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Java Logo -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">JAVA EXPERT</span>
+                    </div>
+                    <!-- 4: Digital Marketing -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Megaphone/Marketing Icon -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/reactivex.svg" />
+                        </span>
+                        <span class="program-title">ADVANCE DIGITAL MARKETING</span>
+                    </div>
+                    <!-- 5: UI/UX -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Pen Tool Icon -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">UI &amp; UX</span>
+                    </div>
+                    <!-- 6: .NET -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- .NET Logo -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">.NET</span>
+                    </div>
+                    <!-- 7: Java Full Stack + Gen AI -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Java + Stack Icon -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">JAVA FULL STACK + GEN AI</span>
+                    </div>
+                    <!-- 8: Data Science -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Atom/AI Icon -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">DATA SCIENCE PROFESSIONAL TRAINING</span>
+                    </div>
+                    <!-- 9: Python -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Python Logo -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">PYTHON TRAINING COURSE</span>
+                    </div>
+                    <!-- 10: Business Analytics -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Chart/Graph Icon -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">BUSINESS ANALYTICS</span>
+                    </div>
+                    <!-- 11: AWS -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- AWS Logo -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">AWS PROFESSIONAL TRAINING</span>
+                    </div>
+                    <!-- 12: Software Testing -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Bug/Checkmark Icon -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">SOFTWARE TESTING COURSE</span>
+                    </div>
+                    <!-- 13: Data Analytics -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Chart Icon -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">DATA ANALYTICS USING PYTHON</span>
+                    </div>
+                    <!-- 14: Generative AI -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- AI/Brain Icon -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">GENERATIVE AI</span>
+                    </div>
+                    <!-- 15: Power BI -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- Power BI Logo -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">POWER BI</span>
+                    </div>
+                    <!-- 16: AutoCAD -->
+                    <div class="program-card">
+                        <span class="program-icon">
+                            <!-- AutoCAD Logo -->
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/cyberdefenders.svg" />
+                        </span>
+                        <span class="program-title">AUTOCAD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About VTECH (Amazing, Journey-Style Section) -->
+        <section id="about-vtech" class="relative bg-white overflow-hidden">
+          <!-- Animated Blobs -->
+          <div class="absolute top-0 -right-12 w-96 h-96 bg-[#ffddd9] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob"></div>
+          <div class="absolute top-0 -left-12 w-96 h-96 bg-[#ffeeed] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000"></div>
+          <div class="absolute -bottom-16 right-20 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-4000"></div>
+
+          <div class="container mx-auto relative z-10 py-16 px-5 md:px-10">
+            <div class="grid lg:grid-cols-9 gap-16 items-center">
+              <!-- Left: Content -->
+              <div class="lg:col-span-5 text-slate-900 space-y-8">
+                <div class="inline-flex items-center gap-3 border border-[#ffb1a7] bg-transparent text-[#ca3f2c] px-4 py-2 rounded-full">
+                  <span class="w-2 h-2 bg-[#ca3f2c] rounded-full animate-pulse"></span>
+                  <span class="text-sm font-semibold">About VTECH Academy</span>
+                </div>
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                  Empowering Your Future with
+                  <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ca3f2c] to-[#e15340] font-bold">
+                    Real Skills & Real Results
+                  </span>
+                </h2>
+                <p class="md:text-lg text-slate-700 leading-relaxed">
+                  VTECH Academy is dedicated to empowering ambitious students with top-notch education, hands-on training, and real-world skills. Our mission is to nurture talent, boost employability, and help you build a successful career in technology and business domains.
+                </p>
+                <!-- Key Highlights/USPs -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+                  <div class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                    <i class="ri-graduation-cap-line text-[#ca3f2c] text-lg"></i>
+                    <span class="font-semibold text-[#1e293b]">10,000+ Students Trained</span>
+                  </div>
+                  <div class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                    <i class="ri-briefcase-4-line text-[#ca3f2c] text-lg"></i>
+                    <span class="font-semibold text-[#1e293b]">100% Placement Assistance</span>
+                  </div>
+                  <div class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                    <i class="ri-award-line text-[#ca3f2c] text-lg"></i>
+                    <span class="font-semibold text-[#1e293b]">15+ Years Experience</span>
+                  </div>
+                  <div class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                    <i class="ri-star-smile-line text-[#ca3f2c] text-lg"></i>
+                    <span class="font-semibold text-[#1e293b]">4.9/5 Student Rating</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Right: Image -->
+              <div class="lg:col-span-4 flex justify-center pt-16 lg:pt-0">
+                <div class="bg-white w-full lg:w-[90%] p-6 rounded-2xl shadow-xl border border-gray-100 relative flex items-center justify-center">
+                  <img src="assets/img/hero-section-img.jpg" alt="About VTECH" class="rounded-2xl shadow-lg max-w-xs md:max-w-sm lg:max-w-md">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Upcoming Batches Section (Premium, No CDN Images) -->
+        <section class="py-12 bg-gradient-to-br from-[#fff7f5] via-[#f8f6f4] to-[#ffe5e0]">
+            <div class="container mx-auto px-5 md:px-10">
+                <div class="flex items-center mb-6">
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800">Upcoming Batches</h2>
+                    <span class="ml-4 h-1 w-20 bg-gradient-to-r from-[#ca3f2c] to-[#e15340] rounded"></span>
+                </div>
+                <!-- Category Pills -->
+                <div class="flex gap-3 mb-8 flex-wrap">
+                    <button class="batch-cat-pill active">All</button>
+                    <button class="batch-cat-pill">Men</button>
+                    <button class="batch-cat-pill">Women</button>
+                    <button class="batch-cat-pill">Working Professionals</button>
+                    <button class="batch-cat-pill">Students</button>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
+                    <!-- Redesigned Batch Cards: Image flush, badge+icon overlay, minimal, moderate font -->
+                    <div class="batch-card-premium">
+                        <div class="batch-card-img-wrap">
+                            <img src="assets/img/courses/course-1.jpg" alt="AUTOCAD" class="batch-card-img">
+                            <div class="batch-card-overlay">
+                                <span class="batch-card-icon-premium"><i class="ri-draft-line"></i></span>
+                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.9</span>
+                            </div>
+                        </div>
+                        <div class="batch-card-body">
+                            <div class="batch-card-title-premium">AUTOCAD</div>
+                            <div class="batch-card-info-premium">
+                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Sector 63, Noida</div>
+                                <div class="batch-card-info-row"><i class="ri-calendar-event-line"></i> 05-07-2025</div>
+                            </div>
+                        </div>
+                        <div class="batch-card-footer">
+                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call
+                                Back</button>
+                        </div>
+                    </div>
+                    <div class="batch-card-premium">
+                        <div class="batch-card-img-wrap">
+                            <img src="assets/img/courses/course-2.jpg" alt="DATA SCIENCE & ML USING PYTHON"
+                                class="batch-card-img">
+                            <div class="batch-card-overlay">
+                                <span class="batch-card-icon-premium"><i class="ri-brain-line"></i></span>
+                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.8</span>
+                            </div>
+                        </div>
+                        <div class="batch-card-body">
+                            <div class="batch-card-title-premium">DATA SCIENCE & ML USING PYTHON</div>
+                            <div class="batch-card-info-premium">
+                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Sector 63, Noida</div>
+                                <div class="batch-card-info-row"><i class="ri-calendar-event-line"></i> 05-07-2025</div>
+                            </div>
+                        </div>
+                        <div class="batch-card-footer">
+                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call
+                                Back</button>
+                        </div>
+                    </div>
+                    <div class="batch-card-premium">
+                        <div class="batch-card-img-wrap">
+                            <img src="assets/img/courses/course-3.jpg" alt="MERN STACK" class="batch-card-img">
+                            <div class="batch-card-overlay">
+                                <span class="batch-card-icon-premium"><i class="ri-reactjs-line"></i></span>
+                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.7</span>
+                            </div>
+                        </div>
+                        <div class="batch-card-body">
+                            <div class="batch-card-title-premium">MERN STACK</div>
+                            <div class="batch-card-info-premium">
+                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Sector 63, Noida</div>
+                                <div class="batch-card-info-row"><i class="ri-calendar-event-line"></i> 05-07-2025</div>
+                            </div>
+                        </div>
+                        <div class="batch-card-footer">
+                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call
+                                Back</button>
+                        </div>
+                    </div>
+                    <div class="batch-card-premium">
+                        <div class="batch-card-img-wrap">
+                            <img src="assets/img/courses/course-4.jpg" alt="CYBER SECURITY" class="batch-card-img">
+                            <div class="batch-card-overlay">
+                                <span class="batch-card-icon-premium"><i class="ri-shield-keyhole-line"></i></span>
+                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.9</span>
+                            </div>
+                        </div>
+                        <div class="batch-card-body">
+                            <div class="batch-card-title-premium">CYBER SECURITY</div>
+                            <div class="batch-card-info-premium">
+                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Sector 63, Noida</div>
+                                <div class="batch-card-info-row"><i class="ri-calendar-event-line"></i> 05-07-2025</div>
+                            </div>
+                        </div>
+                        <div class="batch-card-footer">
+                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call
+                                Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start your journey section -->
         <section id="home" class="relative bg-white overflow-hidden">
             <!-- Animated Blobs -->
-            <div class="absolute top-0 -right-12 w-96 h-96 bg-[#ffddd9] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob"></div>
-            <div class="absolute top-0 -left-12 w-96 h-96 bg-[#ffeeed] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000"></div>
-            <div class="absolute -bottom-16 right-20 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-4000"></div>
-    
+            <div
+                class="absolute top-0 -right-12 w-96 h-96 bg-[#ffddd9] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob">
+            </div>
+            <div
+                class="absolute top-0 -left-12 w-96 h-96 bg-[#ffeeed] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000">
+            </div>
+            <div
+                class="absolute -bottom-16 right-20 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-4000">
+            </div>
+
             <div class="container mx-auto relative z-10 py-16 px-5 md:px-10">
                 <div class="grid lg:grid-cols-9 gap-16 items-center">
                     <!-- Left: Content -->
                     <div class="lg:col-span-5 text-slate-900 space-y-8">
-                        <div class="inline-flex items-center gap-3 border border-[#ffb1a7] bg-transparent text-[#ca3f2c] px-4 py-2 rounded-full">
+                        <div
+                            class="inline-flex items-center gap-3 border border-[#ffb1a7] bg-transparent text-[#ca3f2c] px-4 py-2 rounded-full">
                             <span class="w-2 h-2 bg-[#ca3f2c] rounded-full animate-pulse"></span>
                             <span class="text-sm font-semibold">Admissions Open for 2025</span>
                         </div>
-                        
+
                         <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                            Advance Your Career with 
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ca3f2c] to-[#e15340] font-bold">
+                            Advance Your Career with
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-[#ca3f2c] to-[#e15340] font-bold">
                                 Professional Tech Education
                             </span>
                         </h1>
-                        
+
                         <p class="md:text-lg text-slate-700 leading-relaxed">
-                            Master the latest technologies with industry experts. Join our advanced learning programs designed for ambitious learners and future tech leaders.
+                            Master the latest technologies with industry experts. Join our advanced learning programs
+                            designed for ambitious learners and future tech leaders.
                         </p>
-                        
+
                         <!-- Key Highlights/USPs -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
-                            <div class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                            <div
+                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
                                 <i class="fa-solid fa-certificate text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b]">Govt. Recognized</span>
                             </div>
-                            <div class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                            <div
+                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
                                 <i class="fa-solid fa-briefcase text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b]">Placement Support</span>
                             </div>
-                            <div class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                            <div
+                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
                                 <i class="fa-solid fa-chalkboard-user text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b]">Expert Mentors</span>
                             </div>
-                            <div class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                            <div
+                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
                                 <i class="fa-solid fa-laptop-code text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b]">Live Projects</span>
                             </div>
                         </div>
-                        
+
                         <div class="flex flex-wrap gap-6 items-center">
-                            <a href="#courses" class="bg-[#ca3f2c] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#a12e1e] transition-colors flex items-center gap-3 shadow-lg shadow-[#ca3f2c]/30">
+                            <a href="#courses"
+                                class="bg-[#ca3f2c] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#a12e1e] transition-colors flex items-center gap-3 shadow-lg shadow-[#ca3f2c]/30">
                                 <i class="fa-solid fa-book-open"></i>
                                 Explore Courses
                             </a>
                             <div class="flex items-center gap-4">
                                 <div class="flex -space-x-4">
-                                    <img src="assets/img/courses/course-1.jpg" class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
-                                    <img src="assets/img/courses/course-2.jpg" class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
-                                    <img src="assets/img/courses/course-3.jpg" class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
+                                    <img src="assets/img/courses/course-1.jpg"
+                                        class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
+                                    <img src="assets/img/courses/course-2.jpg"
+                                        class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
+                                    <img src="assets/img/courses/course-3.jpg"
+                                        class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
                                 </div>
                                 <div class="text-sm">
                                     <p class="font-semibold text-slate-800">500+ Students</p>
@@ -143,27 +524,33 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Right: Form -->
                     <div class="lg:col-span-4 flex justify-center pt-32">
-                        <div class="bg-white w-full lg:w-[90%] p-6 rounded-2xl shadow-xl border border-gray-100 relative">
-                            <img src="assets/img/form-bg-object.png" alt="" class="absolute -top-[210px] left-[30px] -z-10">
-    
+                        <div
+                            class="bg-white w-full lg:w-[90%] p-6 rounded-2xl shadow-xl border border-gray-100 relative">
+                            <img src="assets/img/form-bg-object.png" alt=""
+                                class="absolute -top-[210px] left-[30px] -z-10">
+
                             <h2 class="text-2xl font-bold text-slate-800 mb-2">Start Your Journey Today</h2>
                             <p class="text-slate-600 mb-6">Schedule a free consultation with our career advisors</p>
-                            
+
                             <form class="space-y-4">
                                 <div>
-                                    <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#ca3f2c] focus:ring-2 focus:ring-[#ca3f2c]/20 outline-none transition-all">
+                                    <input type="text" placeholder="Full Name"
+                                        class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#ca3f2c] focus:ring-2 focus:ring-[#ca3f2c]/20 outline-none transition-all">
                                 </div>
                                 <div>
-                                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#ca3f2c] focus:ring-2 focus:ring-[#ca3f2c]/20 outline-none transition-all">
+                                    <input type="email" placeholder="Email Address"
+                                        class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#ca3f2c] focus:ring-2 focus:ring-[#ca3f2c]/20 outline-none transition-all">
                                 </div>
                                 <div>
-                                    <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#ca3f2c] focus:ring-2 focus:ring-[#ca3f2c]/20 outline-none transition-all">
+                                    <input type="tel" placeholder="Phone Number"
+                                        class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#ca3f2c] focus:ring-2 focus:ring-[#ca3f2c]/20 outline-none transition-all">
                                 </div>
                                 <div>
-                                    <select class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#ca3f2c] focus:ring-2 focus:ring-[#ca3f2c]/20 outline-none transition-all">
+                                    <select
+                                        class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#ca3f2c] focus:ring-2 focus:ring-[#ca3f2c]/20 outline-none transition-all">
                                         <option value="">Select Course Interest</option>
                                         <option value="web">Web Development</option>
                                         <option value="app">App Development</option>
@@ -171,7 +558,8 @@
                                         <option value="ai">AI & Machine Learning</option>
                                     </select>
                                 </div>
-                                <button type="submit" class="w-full bg-[#ca3f2c] text-white py-3 rounded-lg font-semibold hover:bg-[#a12e1e] transition-opacity">
+                                <button type="submit"
+                                    class="w-full bg-[#ca3f2c] text-white py-3 rounded-lg font-semibold hover:bg-[#a12e1e] transition-opacity">
                                     Schedule Consultation
                                 </button>
                             </form>
@@ -182,9 +570,89 @@
         </section>
     </main>
 
+    <!-- ======= Premium Footer Start ======= -->
+    <footer class="footer-main-bg">
+        <div class="footer-container container mx-auto px-5 md:px-10">
+            <div class="footer-row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-12">
+                <!-- Logo, Tagline, About, Social -->
+                <div class="footer-col flex flex-col gap-4">
+                    <img src="assets/img/logo/logo.png" alt="VTECH Logo" class="footer-logo-simple mb-2">
+                    <div class="footer-tagline-simple">Empowering Minds. Transforming Futures.</div>
+                    <div class="footer-about-simple text-sm opacity-90">Vtech is dedicated to empowering ambitious
+                        students by not only providing top-notch education but also honing their employability skills.
+                    </div>
+                    <div class="footer-social-simple mt-3 flex gap-3">
+                        <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+                <!-- Useful Links -->
+                <div class="footer-col">
+                    <div class="footer-title-simple">Useful Links</div>
+                    <ul class="footer-links-simple">
+                        <li><a href="#home"><i class="ri-home-4-line"></i> Home</a></li>
+                        <li><a href="#about"><i class="ri-information-line"></i> About Us</a></li>
+                        <li><a href="#team"><i class="ri-team-line"></i> Team</a></li>
+                        <li><a href="#gallery"><i class="ri-image-line"></i> Gallery</a></li>
+                        <li><a href="#faq"><i class="ri-question-answer-line"></i> FAQ</a></li>
+                        <li><a href="#blog"><i class="ri-article-line"></i> Blog</a></li>
+                        <li><a href="#contact"><i class="ri-contacts-book-line"></i> Contact Us</a></li>
+                        <li><a href="#terms"><i class="ri-file-list-3-line"></i> Terms & Conditions</a></li>
+                        <li><a href="#privacy"><i class="ri-lock-2-line"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Courses -->
+                <div class="footer-col">
+                    <div class="footer-title-simple">Courses</div>
+                    <ul class="footer-courses-simple">
+                        <li><a href="#"><span class="footer-pill"><img src="assets/img/courses/course-1.jpg"
+                                        alt="IT Programs"> IT Programs</span></a></li>
+                        <li><a href="#"><span class="footer-pill"><img src="assets/img/courses/course-2.jpg"
+                                        alt="E-Accounting"> E-Accounting</span></a></li>
+                        <li><a href="#"><span class="footer-pill"><img src="assets/img/courses/course-3.jpg"
+                                        alt="Basic to Advance"> Basic to Advance</span></a></li>
+                        <li><a href="#"><span class="footer-pill"><img src="assets/img/courses/course-4.jpg"
+                                        alt="Short Term"> Short Term Courses</span></a></li>
+                        <li><a href="#"><span class="footer-pill"><img src="assets/img/courses/course-5.jpg"
+                                        alt="NIELIT"> NIELIT</span></a></li>
+                    </ul>
+                </div>
+                <!-- Enquiry Form -->
+                <div class="footer-col">
+                    <div class="footer-title-simple">Enquiry Form</div>
+                    <form class="footer-enquiry-form">
+                        <input type="text" placeholder="Your Name." class="footer-enquiry-input" required>
+                        <input type="text" placeholder="Your Number" class="footer-enquiry-input" required>
+                        <input type="email" placeholder="Email Address." class="footer-enquiry-input" required>
+                        <select class="footer-enquiry-input" required>
+                            <option value="">Select Course</option>
+                            <option value="it">IT Programs</option>
+                            <option value="eaccounting">E-Accounting</option>
+                            <option value="basic">Basic to Advance</option>
+                            <option value="short">Short Term Courses</option>
+                            <option value="nielit">NIELIT</option>
+                        </select>
+                        <button type="submit" class="footer-enquiry-btn">SUBMIT REQUEST</button>
+                    </form>
+                </div>
+            </div>
+            <div
+                class="footer-bottom-simple flex flex-col md:flex-row justify-between items-center gap-2 border-t border-white/20 pt-5 pb-2 mt-6 text-sm opacity-90">
+                <span>© 2025 - www.vtechedu.in. All rights reserved</span>
+                <div class="flex gap-4">
+                    <a href="#privacy">Privacy & Policy</a>
+                    <a href="#terms">Term Of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ======= Premium Footer End ======= -->
 
     <!-- Custom Scripts -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
