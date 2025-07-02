@@ -47,28 +47,36 @@
 <body class="font-[Inter] bg-[#f8f9fa] overflow-x-hidden">
 
     <!-- Fixed WhatsApp & Call Button -->
-    <div id="fixed-contact-btns" class="!hidden lg:!flex">
+    <div id="fixed-contact-btns" class="!hidden lg:!flex shadow-md">
         <div class="fixed-contact-btn-inner">
-          <a href="https://wa.me/919818734560" target="_blank" class="fixed-btn fixed-btn-whatsapp" title="WhatsApp">
-              <i class="ri-whatsapp-line"></i>
-          </a>
-          <a href="tel:+919818734560" class="fixed-btn fixed-btn-call" title="Call">
-              <i class="ri-phone-fill"></i>
-          </a>
+            <a href="https://wa.me/919818734560" target="_blank" class="fixed-btn fixed-btn-whatsapp" title="WhatsApp">
+                <img src="assets/img/whatsapp.png" alt="" class="w-8">
+            </a>
+            <a href="tel:+919818734560" class="fixed-btn fixed-btn-call" title="Call">
+                <i class="ri-phone-fill"></i>
+            </a>
         </div>
-      </div>
+    </div>
     <!-- Header Section -->
     <header class="main-header flex justify-center">
+
         <nav class="header-nav py-3 max-w-[1600px] relative">
             <div class="container mx-auto px-5 md:px-10 flex justify-between">
                 <div class="flex items-center gap-2">
                     <a href="/" class="text-2xl font-bold flex items-center gap-3">
-                        <img src="assets/img/logo/logo.png" alt="VTECH Academy of Computer" class="w-32 sm:w-44">
+                        <img src="assets/img/logo/logo.png" alt="VTECH Academy of Computer" class="w-28 sm:w-44">
                     </a>
                 </div>
-                <button class="lg:hidden text-2xl text-white" id="mobile-menu-button">
-                    <i class="ri-menu-line"></i>
-                </button>
+                <!-- Mobile Only: Free Counselling & Call -->
+                <div class="flex items-center justify-between lg:hidden gap-4">
+                    <a href="#counselling" class="btn-primary text-[10px] h-fit px-3 items-center gap-[5px]">
+                        <i class="ri-phone-fill text-xs"></i>
+                        Free Counseling
+                    </a>
+                    <button class="text-2xl text-white" id="mobile-menu-button">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </div>
             </div>
             <div class="header-nav-wrapper">
                 <div class="flex items-center gap-8 uppercase">
@@ -105,8 +113,7 @@
                 <a href="#faq" class="mobile-menu-link">Faq</a>
                 <a href="#blog" class="mobile-menu-link">Blog</a>
                 <a href="#contact" class="mobile-menu-link">Contact</a>
-                <a href="#counselling" class="btn-primary mobile-menu-btn"> <i
-                        class="fa-solid fa-arrow-right-to-bracket"></i> Free Counseling</a>
+                <a href="#counselling" class="btn-primary mobile-menu-btn"><i class="ri-phone-fill text-lg"></i> Free Counseling</a>
             </nav>
         </div>
     </header>
@@ -119,120 +126,215 @@
                 <div class="hero-slide active">
                     <div class="hero-slider-overlay"></div>
                     <img src="assets/img/banner/banner-4.jpg" alt="Hero Slide 1" />
-                    <div class="hero-slide-text flex flex-col">Join 10,000+ <span>Successful Students at VTECH</span>
-                    </div>
                 </div>
                 <div class="hero-slide">
                     <div class="hero-slider-overlay"></div>
                     <img src="assets/img/banner/banner-2.jpg" alt="Hero Slide 2" />
-                    <div class="hero-slide-text flex flex-col">Learn from Industry <span>Experts &amp; Get
-                            Certified</span></div>
                 </div>
                 <div class="hero-slide">
                     <div class="hero-slider-overlay"></div>
                     <img src="assets/img/banner/banner-5.jpg" alt="Hero Slide 3" />
-
-                    <div class="hero-slide-text flex flex-col">Empower Your Future with <span>VTECH Academy</span></div>
-                </div>
-                <div class="container mx-auto relative h-full">
-                    <button class="hero-slider-arrow hero-slider-prev" aria-label="Previous Slide"><i
-                            class="ri-arrow-left-s-line"></i></button>
-                    <button class="hero-slider-arrow hero-slider-next" aria-label="Next Slide"><i
-                            class="ri-arrow-right-s-line"></i></button>
-                    <div class="hero-slider-dots">
-                        <span class="hero-slider-dot active"></span>
-                        <span class="hero-slider-dot"></span>
-                        <span class="hero-slider-dot"></span>
-                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Highlights Section -->
-        <section class=" py-10 lg:py-14 bg-gradient-to-br from-[#fff7f5] via-[#f8f6f4] to-[#ffe5e0]">
+        <section class="py-10 lg:py-14 -mt-[120px] sm:-mt-[160px] bg-white">
             <div class="container mx-auto px-5 md:px-10">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                    <div class="highlight-glass-card">
-                        <span class="highlight-glass-icon"><i class="ri-brain-line"></i></span>
-                        <div class="highlight-glass-text">Learn Essential Skills</div>
+                <div class="owl-carousel highlights-carousel">
+                    <div class="item">
+                        <div class="highlight-card relative rounded-2xl overflow-hidden">
+                            <img src="assets/img/courses/course-1.jpg" alt="" class="highlight-bg absolute inset-0 w-full h-full object-cover" />
+                            <div class="highlight-overlay absolute inset-0 bg-gradient-to-br from-blue-500/90 to-indigo-600/90"></div>
+                            <div class="highlight-content relative z-10 flex flex-col items-center justify-center h-full py-10">
+                                <span class="highlight-icon text-4xl text-white mb-4"><i class="ri-brain-line"></i></span>
+                                <div class="highlight-title text-white font-bold">Learn Essential Skills</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="highlight-glass-card">
-                        <span class="highlight-glass-icon"><i class="ri-award-line"></i></span>
-                        <div class="highlight-glass-text">Earn Recognized Certificates</div>
+                    <div class="item">
+                        <div class="highlight-card relative rounded-2xl overflow-hidden">
+                            <img src="assets/img/courses/course-2.jpg" alt="" class="highlight-bg absolute inset-0 w-full h-full object-cover" />
+                            <div class="highlight-overlay absolute inset-0 bg-gradient-to-br from-green-400/90 to-teal-500/90"></div>
+                            <div class="highlight-content relative z-10 flex flex-col items-center justify-center h-full py-10">
+                                <span class="highlight-icon text-4xl text-white mb-4"><i class="ri-award-line"></i></span>
+                                <div class="highlight-title text-white font-bold">Earn Recognized Certificates</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="highlight-glass-card">
-                        <span class="highlight-glass-icon"><i class="ri-rocket-2-line"></i></span>
-                        <div class="highlight-glass-text">Advance Your Career</div>
+                    <div class="item">
+                        <div class="highlight-card relative rounded-2xl overflow-hidden">
+                            <img src="assets/img/courses/course-3.jpg" alt="" class="highlight-bg absolute inset-0 w-full h-full object-cover" />
+                            <div class="highlight-overlay absolute inset-0 bg-gradient-to-br from-yellow-400/90 to-orange-500/90"></div>
+                            <div class="highlight-content relative z-10 flex flex-col items-center justify-center h-full py-10">
+                                <span class="highlight-icon text-4xl text-white mb-4"><i class="ri-rocket-2-line"></i></span>
+                                <div class="highlight-title text-white font-bold">Advance Your Career</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="highlight-glass-card">
-                        <span class="highlight-glass-icon"><i class="ri-star-smile-line"></i></span>
-                        <div class="highlight-glass-text">Master Multiple Domains</div>
+                    <div class="item">
+                        <div class="highlight-card relative rounded-2xl overflow-hidden">
+                            <img src="assets/img/courses/course-4.jpg" alt="" class="highlight-bg absolute inset-0 w-full h-full object-cover" />
+                            <div class="highlight-overlay absolute inset-0 bg-gradient-to-br from-pink-500/90 to-red-500/90"></div>
+                            <div class="highlight-content relative z-10 flex flex-col items-center justify-center h-full py-10">
+                                <span class="highlight-icon text-4xl text-white mb-4"><i class="ri-star-smile-line"></i></span>
+                                <div class="highlight-title text-white font-bold">Master Multiple Domains</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="highlight-card relative rounded-2xl overflow-hidden">
+                            <img src="assets/img/courses/course-5.jpg" alt="" class="highlight-bg absolute inset-0 w-full h-full object-cover" />
+                            <div class="highlight-overlay absolute inset-0 bg-gradient-to-br from-purple-500/90 to-fuchsia-600/90"></div>
+                            <div class="highlight-content relative z-10 flex flex-col items-center justify-center h-full py-10">
+                                <span class="highlight-icon text-4xl text-white mb-4"><i class="ri-lightbulb-flash-line"></i></span>
+                                <div class="highlight-title text-white font-bold">Innovative Learning</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Top Programs Section (Field-Related SVG/Logo Icons) -->
-        <section class="py-12 bg-[#f8f6f4]">
+        <section class="py-12 bg-white">
             <div class="container mx-auto px-5 md:px-10">
                 <div class="flex items-center mb-8">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800">Explore Top Programs</h2>
-                    <span
-                        class="hidden sm:block ml-4 h-1 w-20 bg-gradient-to-r from-[#ca3f2c] to-[#e15340] rounded mt-2"></span>
+                    <h2 class="section-heading">Explore Top Programs</h2>
                 </div>
-                <div class="programs-modern-grid grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-                    <div class="program-modern-card">
-                        <img class="program-modern-img" src="assets/img/courses/course-1.jpg" alt="MERN Stack + Gen AI">
-                        <div class="program-modern-content">
-                            <div class="program-modern-title">MERN STACK + GEN AI</div>
-                            <div class="program-modern-desc">Full stack web development with modern AI integration.
+                <div class="programs-modern-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10 mt-16">
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-1.jpg" alt="MERN Stack + Gen AI"
+                            class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">MERN STACK + GEN AI</div>
+                            <div class="text-[0.97rem] text-[#444]">Full stack web development with modern AI
+                                integration.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-2.jpg" alt="Cyber Security + Gen AI"
+                            class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">CYBER SECURITY + GEN AI</div>
+                            <div class="text-[0.97rem] text-[#444]">Protect digital assets with advanced AI-powered
+                                security.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-3.jpg" alt="Java Expert" class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">JAVA EXPERT</div>
+                            <div class="text-[0.97rem] text-[#444]">Master Java programming for enterprise solutions.
                             </div>
                         </div>
                     </div>
-                    <div class="program-modern-card">
-                        <img class="program-modern-img" src="assets/img/courses/course-2.jpg"
-                            alt="Cyber Security + Gen AI">
-                        <div class="program-modern-content">
-                            <div class="program-modern-title">CYBER SECURITY + GEN AI</div>
-                            <div class="program-modern-desc">Protect digital assets with advanced AI-powered security.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="program-modern-card">
-                        <img class="program-modern-img" src="assets/img/courses/course-3.jpg" alt="Java Expert">
-                        <div class="program-modern-content">
-                            <div class="program-modern-title">JAVA EXPERT</div>
-                            <div class="program-modern-desc">Master Java programming for enterprise solutions.</div>
-                        </div>
-                    </div>
-                    <div class="program-modern-card">
-                        <img class="program-modern-img" src="assets/img/courses/course-4.jpg"
-                            alt="Advance Digital Marketing">
-                        <div class="program-modern-content">
-                            <div class="program-modern-title">ADVANCE DIGITAL MARKETING</div>
-                            <div class="program-modern-desc">Grow your business with modern digital marketing
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-4.jpg" alt="Advance Digital Marketing"
+                            class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">ADVANCE DIGITAL MARKETING</div>
+                            <div class="text-[0.97rem] text-[#444]">Grow your business with modern digital marketing
                                 strategies.</div>
                         </div>
                     </div>
-                    <div class="program-modern-card">
-                        <img class="program-modern-img" src="assets/img/courses/course-5.jpg" alt="UI & UX">
-                        <div class="program-modern-content">
-                            <div class="program-modern-title">UI & UX</div>
-                            <div class="program-modern-desc">Design beautiful and user-friendly interfaces.</div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-5.jpg" alt="UI & UX" class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">UI & UX</div>
+                            <div class="text-[0.97rem] text-[#444]">Design beautiful and user-friendly interfaces.</div>
                         </div>
                     </div>
-                    <div class="program-modern-card">
-                        <img class="program-modern-img" src="assets/img/courses/course-6.jpg" alt=".NET">
-                        <div class="program-modern-content">
-                            <div class="program-modern-title">.NET</div>
-                            <div class="program-modern-desc">Develop robust applications with Microsoft .NET.</div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-6.jpg" alt=".NET" class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">.NET</div>
+                            <div class="text-[0.97rem] text-[#444]">Develop robust applications with Microsoft .NET.
+                            </div>
                         </div>
                     </div>
-                    <div class="program-modern-card">
-                        <img class="program-modern-img" src="assets/img/courses/PYTHON.jpg" alt="Python">
-                        <div class="program-modern-content">
-                            <div class="program-modern-title">PYTHON TRAINING COURSE</div>
-                            <div class="program-modern-desc">Python programming from basics to advanced.</div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-3.jpg" alt="Java Full Stack Developer + Gen AI"
+                            class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">JAVA FULL STACK DEVELOPER + GEN AI</div>
+                            <div class="text-[0.97rem] text-[#444]">Enterprise Java with modern full stack and AI
+                                skills.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-4.jpg" alt="Data Science Professional Training"
+                            class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">DATA SCIENCE PROFESSIONAL TRAINING</div>
+                            <div class="text-[0.97rem] text-[#444]">Professional data science and analytics training.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/PYTHON.jpg" alt="Python Training Course"
+                            class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">PYTHON TRAINING COURSE</div>
+                            <div class="text-[0.97rem] text-[#444]">Python programming from basics to advanced.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-5.jpg" alt="Business Analytics"
+                            class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">BUSINESS ANALYTICS</div>
+                            <div class="text-[0.97rem] text-[#444]">Business intelligence and analytics for
+                                professionals.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-6.jpg" alt="AWS Professional Training"
+                            class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">AWS PROFESSIONAL TRAINING</div>
+                            <div class="text-[0.97rem] text-[#444]">Cloud computing and AWS certification training.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-4.jpg" alt="Software Testing Course"
+                            class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">SOFTWARE TESTING COURSE</div>
+                            <div class="text-[0.97rem] text-[#444]">Comprehensive software testing and QA training.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-5.jpg" alt="Data Analytics Using Python"
+                            class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">DATA ANALYTICS USING PYTHON</div>
+                            <div class="text-[0.97rem] text-[#444]">Data analytics and visualization with Python.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-1.jpg" alt="Generative AI" class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">GENERATIVE AI</div>
+                            <div class="text-[0.97rem] text-[#444]">Learn the latest in generative AI technologies.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-2.jpg" alt="Power BI" class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">POWER BI</div>
+                            <div class="text-[0.97rem] text-[#444]">Business analytics and visualization with Power BI.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/img/courses/course-3.jpg" alt="AUTOCAD" class="w-12 h-12 object-contain">
+                        <div>
+                            <div class="font-bold text-black">AUTOCAD</div>
+                            <div class="text-[0.97rem] text-[#444]">Professional training in AutoCAD design tools.</div>
                         </div>
                     </div>
                 </div>
@@ -266,7 +368,7 @@
                         <h2 class="text-2xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight">
                             Empowering Your Future with
                             <span
-                                class="text-transparent bg-clip-text bg-gradient-to-r from-[#ca3f2c] to-[#e15340] font-bold">
+                                class="text-[#0e1d6e] font-bold">
                                 Real Skills & Real Results
                             </span>
                         </h2>
@@ -315,13 +417,16 @@
         <section class="guidance-section">
             <div class="container mx-auto px-5 md:px-10 flex flex-col items-center justify-center gap-7">
                 <div class="guidance-content flex flex-col items-center text-center gap-5 w-full">
-                    <h2 class="guidance-heading flex flex-col">Need Career Guidance? <span>Talk to Our Experts!</span></h2>
-                    <p class="guidance-subheading">Our counselors are ready to help you choose the right course and career path for your goals.</p>
+                    <h2 class="guidance-heading flex flex-col">Need Career Guidance? <span>Talk to Our Experts!</span>
+                    </h2>
+                    <p class="guidance-subheading">Our counselors are ready to help you choose the right course and
+                        career path for your goals.</p>
                     <div class="guidance-contacts flex flex-col sm:flex-row gap-4 w-full justify-center">
-                        <a href="tel:+919818734560" class="btn-primary flex items-center gap-2 justify-center">
+                        <a href="tel:+919818734560" class="btn-primary text-white flex items-center gap-2 justify-center">
                             <i class="fa-solid fa-phone"></i> Call: +91-9818734560
                         </a>
-                        <a href="https://wa.me/919818734560" target="_blank" class="btn-primary flex items-center gap-2 justify-center" style="background: linear-gradient(90deg, #22c55e 60%, #16a34a 100%);">
+                        <a href="https://wa.me/919818734560" target="_blank"
+                            class="btn-primary text-white flex items-center gap-2 justify-center bg-[#22c55e]">
                             <i class="fa-brands fa-whatsapp"></i> WhatsApp: +91-9818734560
                         </a>
                     </div>
@@ -330,12 +435,10 @@
         </section>
 
         <!-- Upcoming Batches Section (Premium, No CDN Images) -->
-        <section class="py-12 bg-gradient-to-br from-[#fff7f5] via-[#f8f6f4] to-[#ffe5e0]">
+        <section class="py-12">
             <div class="container mx-auto px-5 md:px-10">
-                <div class="flex items-center mb-6">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800">Upcoming Batches</h2>
-                    <span
-                        class="hidden sm:block ml-4 h-1 w-20 bg-gradient-to-r from-[#ca3f2c] to-[#e15340] rounded mt-2"></span>
+                <div class="flex items-center mb-8">
+                    <h2 class="section-heading">Upcoming Batches</h2>
                 </div>
                 <!-- Category Pills -->
                 <div class="flex gap-3 mb-8 flex-wrap">
@@ -570,13 +673,15 @@
             <div class="container mx-auto px-5 md:px-10">
                 <div class="text-center mb-10">
                     <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-2">What Our Students Says</h2>
-                    <p class="text-slate-600 max-w-xl mx-auto">Real experiences from VTECH Academy students who advanced their careers and skills with us.</p>
+                    <p class="text-slate-600 max-w-xl mx-auto">Real experiences from VTECH Academy students who advanced
+                        their careers and skills with us.</p>
                 </div>
                 <div class="owl-carousel testimonial-carousel">
                     <!-- Testimonial 1 -->
                     <div class="testimonial-card-owl">
                         <div class="testimonial-quote-owl"><i class="fa-solid fa-quote-left"></i></div>
-                        <div class="testimonial-text-owl">VTECH Academy gave me the confidence and skills to land my dream job in tech. The mentors are amazing and the projects are real-world!</div>
+                        <div class="testimonial-text-owl">VTECH Academy gave me the confidence and skills to land my
+                            dream job in tech. The mentors are amazing and the projects are real-world!</div>
                         <div class="testimonial-user-row-owl">
                             <img src="assets/img/courses/course-1.jpg" alt="Student" class="testimonial-avatar-owl">
                             <div>
@@ -588,7 +693,8 @@
                     <!-- Testimonial 2 -->
                     <div class="testimonial-card-owl">
                         <div class="testimonial-quote-owl"><i class="fa-solid fa-quote-left"></i></div>
-                        <div class="testimonial-text-owl">The hands-on approach and placement support at VTECH is unmatched. I highly recommend it to anyone serious about their career.</div>
+                        <div class="testimonial-text-owl">The hands-on approach and placement support at VTECH is
+                            unmatched. I highly recommend it to anyone serious about their career.</div>
                         <div class="testimonial-user-row-owl">
                             <img src="assets/img/courses/course-2.jpg" alt="Student" class="testimonial-avatar-owl">
                             <div>
@@ -600,7 +706,8 @@
                     <!-- Testimonial 3 -->
                     <div class="testimonial-card-owl">
                         <div class="testimonial-quote-owl"><i class="fa-solid fa-quote-left"></i></div>
-                        <div class="testimonial-text-owl">From expert mentors to live projects, everything at VTECH is top-notch. My skills and confidence have grown so much!</div>
+                        <div class="testimonial-text-owl">From expert mentors to live projects, everything at VTECH is
+                            top-notch. My skills and confidence have grown so much!</div>
                         <div class="testimonial-user-row-owl">
                             <img src="assets/img/courses/course-3.jpg" alt="Student" class="testimonial-avatar-owl">
                             <div>
@@ -612,7 +719,8 @@
                     <!-- Testimonial 4 -->
                     <div class="testimonial-card-owl">
                         <div class="testimonial-quote-owl"><i class="fa-solid fa-quote-left"></i></div>
-                        <div class="testimonial-text-owl">The curriculum is industry-relevant and the support from the faculty is outstanding. I landed a great job after my course!</div>
+                        <div class="testimonial-text-owl">The curriculum is industry-relevant and the support from the
+                            faculty is outstanding. I landed a great job after my course!</div>
                         <div class="testimonial-user-row-owl">
                             <img src="assets/img/courses/course-4.jpg" alt="Student" class="testimonial-avatar-owl">
                             <div>
@@ -624,7 +732,8 @@
                     <!-- Testimonial 5 -->
                     <div class="testimonial-card-owl">
                         <div class="testimonial-quote-owl"><i class="fa-solid fa-quote-left"></i></div>
-                        <div class="testimonial-text-owl">VTECH's practical approach and placement assistance made all the difference in my career. Highly recommended!</div>
+                        <div class="testimonial-text-owl">VTECH's practical approach and placement assistance made all
+                            the difference in my career. Highly recommended!</div>
                         <div class="testimonial-user-row-owl">
                             <img src="assets/img/courses/course-5.jpg" alt="Student" class="testimonial-avatar-owl">
                             <div>
@@ -644,7 +753,8 @@
         <div class="footer-container container mx-auto px-5 md:px-10">
             <div class="footer-row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 py-12">
                 <!-- Logo, Tagline, About, Social -->
-                <div class="footer-col flex flex-col gap-4 sm:col-span-2 lg:col-span-3 xl:col-span-1 items-center xl:items-start text-center xl:text-start">
+                <div
+                    class="footer-col flex flex-col gap-4 sm:col-span-2 lg:col-span-3 xl:col-span-1 items-center xl:items-start text-center xl:text-start">
                     <img src="assets/img/logo/logo.png" alt="VTECH Logo" class="footer-logo-simple mb-2">
                     <div class="footer-tagline-simple">Empowering Minds. Transforming Futures.</div>
                     <div class="footer-about-simple text-sm opacity-90">Vtech is dedicated to empowering ambitious
@@ -658,7 +768,7 @@
                     </div>
                 </div>
                 <!-- Useful Links -->
-                <div class="footer-col">
+                <div class="footer-col xl:ml-[100px]">
                     <div class="footer-title-simple">Useful Links</div>
                     <ul class="footer-links-simple">
                         <li><a href="#home"><i class="ri-home-4-line"></i> Home</a></li>
@@ -690,23 +800,25 @@
                     <div class="footer-title-simple">Contact Details</div>
                     <div class="footer-contact-box">
                         <div class="footer-contact-row">
-                            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
-                            <span class="footer-contact-text">Building No. 13, 3rd floor, Ashok Vihar,<br>Phase-1, Central Market, New Delhi- 110052</span>
+                            <span class="footer-contact-icon"><i class="ri-map-pin-2-fill"></i></span>
+                            <span class="footer-contact-text">Building No. 13, 3rd floor, Ashok Vihar, Phase-1,
+                                Central Market, New Delhi- 110052</span>
                         </div>
                         <hr class="footer-contact-divider">
                         <div class="footer-contact-row">
-                            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
-                            <span class="footer-contact-text">91+ <b>9818734560</b><br>91+ <b>9212229400</b></span>
+                            <span class="footer-contact-icon"><i class="ri-phone-fill"></i></span>
+                            <span class="footer-contact-text">91+ 9818734560<br>91+ 9212229400</span>
                         </div>
                         <hr class="footer-contact-divider">
                         <div class="footer-contact-row">
-                            <span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <span class="footer-contact-icon"><i class="ri-mail-fill"></i></span>
                             <span class="footer-contact-text">vtechaocwebmail@gmail.com</span>
                         </div>
                         <hr class="footer-contact-divider">
                         <div class="footer-contact-row">
-                            <span class="footer-contact-icon"><i class="fa-solid fa-clock"></i></span>
-                            <span class="footer-contact-text">Office Timings: 10:00 AM to 7:00 PM<br>(Monday to Saturday)</span>
+                            <span class="footer-contact-icon"><i class="ri-time-fill"></i></span>
+                            <span class="footer-contact-text">Office Timings: 10:00 AM to 7:00 PM (Monday to
+                                Saturday)</span>
                         </div>
                     </div>
                 </div>
