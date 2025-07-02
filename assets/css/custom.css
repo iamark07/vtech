@@ -155,7 +155,7 @@ body {
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 500;
-  transition: background 1s;
+  transition: background .3s;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -163,7 +163,7 @@ body {
   text-transform: uppercase;
 }
 .btn-primary:hover {
-  background-color: #d1a000;
+  background-color: #e9b200;
 }
 
 /* Mobile Menu Overlay and Sidebar */
@@ -266,7 +266,7 @@ body {
 
 .footer-main-bg {
   width: 100%;
-  background: linear-gradient(to top right, #991b1b, #b91c1c);
+  background-color: #700000;
   color: #fff;
 }
 .footer-container {
@@ -429,7 +429,6 @@ body {
 .footer-bottom-simple {
   border-top: 1.5px solid #fff7;
   background: transparent;
-  padding: 2rem 0 2rem 0;
   text-align: center;
   font-size: 1rem;
   color: #fff;
@@ -554,6 +553,13 @@ body {
     line-height: 2.25rem;
   }
 }
+
+@media (max-width: 768px) {
+  .section-heading::after {
+    display: none !important;
+  }
+}
+
 .section-heading::after {
   content: "";
   display: block;
@@ -566,3 +572,53 @@ body {
   top: 60%;
   transform: translateY(-50%);
 }
+
+/* === VTECH Fixed Bottom Consultation Form === */
+.bottom-inquery-form {
+  background: #14305c;
+  box-shadow: 0 -2px 24px 0 rgba(20, 48, 92, 0.10);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.bottom-inquery-form-inner {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-inquery-form-input {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #e5e7eb;
+  background: #fff;
+  color: #1e293b;
+  padding: 0.7rem 1.1rem;
+  min-width: 160px;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.bottom-inquery-form-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--accent-bg1);
+}
+@media (max-width: 1280px) {
+  .bottom-inquery-form-inner {
+    gap: 0.7rem;
+  }
+  .bottom-inquery-form-input {
+    min-width: 120px;
+    font-size: 0.95rem;
+    padding: 0.6rem 0.7rem;
+  }
+}
+@media (max-width: 1024px) {
+  .bottom-inquery-form {
+    display: none !important;
+  }
+}
+/* === End VTECH Fixed Bottom Consultation Form === */
+
