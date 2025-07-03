@@ -304,7 +304,7 @@
 
 /* WhatsApp and Number Buttons (Guidance Section) */
 .btn-whatsapp {
-  background: #25d366;
+  background: #1dc55b;
   color: #fff;
   border-radius: 8px;
   font-weight: 600;
@@ -316,9 +316,8 @@
   text-decoration: none;
 }
 .btn-whatsapp:hover {
-  background: #128c7e;
+  background: #00b141;
   color: #fff;
-  transform: translateY(-2px) scale(1.04);
 }
 .btn-number {
   background: #fff;
