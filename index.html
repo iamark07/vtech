@@ -57,71 +57,118 @@
             </a>
         </div>
     </div>
-    <!-- Header Section -->
-    <header class="main-header flex justify-center">
-
-        <nav class="header-nav py-3 max-w-[1600px] relative">
-            <div class="container mx-auto px-5 md:px-10 flex justify-between">
-                <div class="flex items-center gap-2">
-                    <a href="/" class="text-2xl font-bold flex items-center gap-3">
-                        <img src="assets/img/logo/logo.png" alt="VTECH Academy of Computer" class="w-28 sm:w-44">
-                    </a>
-                </div>
-                <!-- Mobile Only: Free Counselling & Call -->
-                <div class="flex items-center justify-between lg:hidden gap-4">
-                    <a href="#counselling" class="btn-primary text-[10px] h-fit px-3 items-center gap-[5px]">
-                        <i class="ri-phone-fill text-xs"></i>
-                        Free Counseling
-                    </a>
-                    <button class="text-2xl text-white" id="mobile-menu-button">
-                        <i class="ri-menu-line"></i>
-                    </button>
-                </div>
+    <div class="top-bar w-full py-3 text-sm hidden lg:flex">
+        <div class="container mx-auto px-5 md:px-10 flex justify-between">
+            <div class="top-bar-contact flex items-center gap-4">
+                <a href="tel:+919818734560" class="flex items-center gap-1"><i class="ri-phone-fill"></i>
+                    +91-9818734560</a>
+                <a href="mailto:vtechaocwebmail@gmail.com" class="flex items-center gap-1"><i class="ri-mail-fill"></i>
+                    vtechaocwebmail@gmail.com</a>
             </div>
-            <div class="header-nav-wrapper">
-                <div class="flex items-center gap-8 uppercase">
-                    <a href="#home" class="header-link">Home</a>
-                    <a href="#about" class="header-link">About</a>
-                    <a href="#courses" class="header-link">Courses</a>
-                    <a href="#team" class="header-link">Team</a>
-                    <a href="#gallery" class="header-link">Gallery</a>
-                    <a href="#faq" class="header-link">Faq</a>
-                    <a href="#blog" class="header-link">Blog</a>
-                    <a href="#contact" class="header-link">Contact</a>
-                </div>
-                <div class="header-divider hidden xl:block">
-                    <a href="#counselling" class="btn-primary">
-                        <i class="ri-phone-fill text-lg"></i>
-                        Free Counseling
-                    </a>
-                </div>
+            <div class="top-bar-social flex items-center gap-5">
+                <a href="#" aria-label="Facebook" class="top-bar-social-link"><i class="ri-facebook-fill"></i></a>
+                <a href="#" aria-label="Instagram" class="top-bar-social-link"><i class="ri-instagram-line"></i></a>
+                <a href="#" aria-label="Twitter" class="top-bar-social-link"><i class="ri-twitter-x-line"></i></a>
+                <a href="#" aria-label="LinkedIn" class="top-bar-social-link"><i class="ri-linkedin-fill"></i></a>
             </div>
-        </nav>
-        <!-- Mobile Menu Overlay and Sidebar -->
-        <div class="mobile-menu-overlay"></div>
-        <div class="mobile-menu-bar">
-            <div class="mobile-menu-header">
-                <span class="mobile-menu-title">Menu</span>
-                <button class="mobile-menu-close" id="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <nav class="mobile-menu-links">
-                <a href="#home" class="mobile-menu-link mobile-menu-link-active">Home</a>
-                <a href="#about" class="mobile-menu-link">About</a>
-                <a href="#courses" class="mobile-menu-link">Courses</a>
-                <a href="#team" class="mobile-menu-link">Team</a>
-                <a href="#gallery" class="mobile-menu-link">Gallery</a>
-                <a href="#faq" class="mobile-menu-link">Faq</a>
-                <a href="#blog" class="mobile-menu-link">Blog</a>
-                <a href="#contact" class="mobile-menu-link">Contact</a>
-                <a href="#counselling" class="btn-primary mobile-menu-btn"><i class="ri-phone-fill text-lg"></i> Free Counseling</a>
-            </nav>
         </div>
-    </header>
+    </div>
 
 
     <main>
+        <!-- hero video section -->
+        <section class="hero-video-section relative w-full overflow-hidden">
+            <!-- Header Section -->
+            <header class="main-header flex justify-center">
+                <div class="container mx-auto px-5 md:px-10 flex justify-between">
+                    <nav class="header-nav py-3 relative">
+                        <div class="flex justify-between w-full">
+                            <div class="flex items-center gap-2">
+                                <a href="/" class="text-2xl font-bold flex items-center gap-3">
+                                    <img src="assets/img/logo/logo.png" alt="VTECH Academy of Computer"
+                                        class="w-28 sm:w-44">
+                                </a>
+                            </div>
+                            <!-- Mobile Only: Free Counselling & Call -->
+                            <div class="flex items-center justify-between lg:hidden gap-4">
+                                <a href="#counselling"
+                                    class="btn-primary text-[10px] h-fit px-3 items-center gap-[5px]">
+                                    <i class="ri-phone-fill text-xs"></i>
+                                    Free Counseling
+                                </a>
+                                <button class="text-2xl text-white" id="mobile-menu-button">
+                                    <i class="ri-menu-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="header-nav-wrapper">
+                            <div class="flex items-center gap-8 uppercase">
+                                <a href="#home" class="header-link">Home</a>
+                                <a href="#about" class="header-link">About</a>
+                                <a href="#courses" class="header-link">Courses</a>
+                                <a href="#team" class="header-link">Team</a>
+                                <a href="#gallery" class="header-link">Gallery</a>
+                                <a href="#faq" class="header-link">Faq</a>
+                                <a href="#blog" class="header-link">Blog</a>
+                                <a href="#contact" class="header-link">Contact</a>
+                            </div>
+                            <div class="header-divider hidden xl:block">
+                                <a href="#counselling" class="btn-primary">
+                                    <i class="ri-phone-fill text-lg"></i>
+                                    Free Counseling
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Mobile Menu Overlay and Sidebar -->
+                    <div class="mobile-menu-overlay"></div>
+                    <div class="mobile-menu-bar">
+                        <div class="mobile-menu-header">
+                            <span class="mobile-menu-title">Menu</span>
+                            <button class="mobile-menu-close" id="mobile-menu-close"><i
+                                    class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <nav class="mobile-menu-links">
+                            <a href="#home" class="mobile-menu-link mobile-menu-link-active">Home</a>
+                            <a href="#about" class="mobile-menu-link">About</a>
+                            <a href="#courses" class="mobile-menu-link">Courses</a>
+                            <a href="#team" class="mobile-menu-link">Team</a>
+                            <a href="#gallery" class="mobile-menu-link">Gallery</a>
+                            <a href="#faq" class="mobile-menu-link">Faq</a>
+                            <a href="#blog" class="mobile-menu-link">Blog</a>
+                            <a href="#contact" class="mobile-menu-link">Contact</a>
+                            <a href="#counselling" class="btn-primary mobile-menu-btn"><i
+                                    class="ri-phone-fill text-lg"></i>
+                                Free
+                                Counseling</a>
+                        </nav>
+                    </div>
+            </header>
+            <div>
+                <video class="hero-video-bg" src="assets/video/hero-bg-video.mp4" autoplay loop muted
+                    playsinline></video>
+                <div class="hero-video-overlay"></div>
+                <div class="hero-video-content container mx-auto px-5 md:px-10">
+                    <span class="uppercase mb-3 font-[600] tracking-wider text-white text-sm md:text-base drop-shadow">#1&nbsp;Career Platform</span>
+                    <h1 class="text-3xl md:text-6xl font-bold text-white mb-6  leading-tight">
+                        Transform Your Career with <span class="text-white font-bold">VTech</span>
+                    </h1>
+                    <p class="text-sm md:text-lg text-gray-200 mb-8 max-w-5xl">
+                        Learn from the best. Achieve your dreams.
+                        Join <span class="text-[#ffc500]">1000+ students</span> who have upskilled with us and are now working at top companies worldwide.
+                        <span class="text-white/80">Your success story starts here!</span>
+                    </p>
+                    <a href="#courses"
+                        class="btn-primary text-xs">
+                        <i class="fa-solid fa-rocket"></i>
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Hero Image Slider -->
-        <section class="hero-slider-section">
+        <section class="hero-slider-section hidden">
             <div class="hero-slider">
                 <div class="hero-slide active">
                     <div class="hero-slider-overlay"></div>
@@ -138,61 +185,55 @@
             </div>
         </section>
 
+
         <!-- Highlights Section -->
-        <section class="py-10 lg:py-14 -mt-[120px] sm:-mt-[160px] bg-white">
-            <div class="container mx-auto px-5 md:px-10">
-                <div class="owl-carousel highlights-carousel">
-                    <div class="item">
-                        <div class="highlight-card relative rounded-2xl overflow-hidden">
-                            <img src="assets/img/courses/course-1.jpg" alt="" class="highlight-bg absolute inset-0 w-full h-full object-cover" />
-                            <div class="highlight-overlay absolute inset-0 bg-gradient-to-br from-blue-500/90 to-indigo-600/90"></div>
-                            <div class="highlight-content relative z-10 flex flex-col items-center justify-center h-full py-10">
-                                <span class="highlight-icon text-4xl text-white mb-4"><i class="ri-brain-line"></i></span>
-                                <div class="highlight-title text-white font-bold">Learn Essential Skills</div>
-                            </div>
+        <section class="py-10 lg:py-14 -mt-[145px] md:-mt-[180px] lg:-mt-[200px] bg-white">
+            <div class="container mx-auto px-5 md:px-10 relative z-50">
+                <div class="owl-carousel highlights-carousel relative">
+                    <!-- Card 1 -->
+                    <div class="highlight-card-custom min-h-[210px] md:min-h-[280px] max-h-[370px] md:max-h-[370px]">
+                        <div class="highlight-icon-wrap">
+                            <i class="ri-brain-line"></i>
                         </div>
+                        <div class="highlight-title">Build Essential Skills</div>
+                        <div class="highlight-desc">Gain practical knowledge for real-world success.</div>
                     </div>
-                    <div class="item">
-                        <div class="highlight-card relative rounded-2xl overflow-hidden">
-                            <img src="assets/img/courses/course-2.jpg" alt="" class="highlight-bg absolute inset-0 w-full h-full object-cover" />
-                            <div class="highlight-overlay absolute inset-0 bg-gradient-to-br from-green-400/90 to-teal-500/90"></div>
-                            <div class="highlight-content relative z-10 flex flex-col items-center justify-center h-full py-10">
-                                <span class="highlight-icon text-4xl text-white mb-4"><i class="ri-award-line"></i></span>
-                                <div class="highlight-title text-white font-bold">Earn Recognized Certificates</div>
-                            </div>
+                    <!-- Card 2 -->
+                    <div class="highlight-card-custom min-h-[210px] md:min-h-[280px] max-h-[370px] md:max-h-[370px]">
+                        <div class="highlight-icon-wrap">
+                            <i class="ri-award-line"></i>
                         </div>
+                        <div class="highlight-title">Get Certified & Recognized</div>
+                        <div class="highlight-desc">Earn certificates and degrees to showcase your expertise.</div>
                     </div>
-                    <div class="item">
-                        <div class="highlight-card relative rounded-2xl overflow-hidden">
-                            <img src="assets/img/courses/course-3.jpg" alt="" class="highlight-bg absolute inset-0 w-full h-full object-cover" />
-                            <div class="highlight-overlay absolute inset-0 bg-gradient-to-br from-yellow-400/90 to-orange-500/90"></div>
-                            <div class="highlight-content relative z-10 flex flex-col items-center justify-center h-full py-10">
-                                <span class="highlight-icon text-4xl text-white mb-4"><i class="ri-rocket-2-line"></i></span>
-                                <div class="highlight-title text-white font-bold">Advance Your Career</div>
-                            </div>
+                    <!-- Card 3 -->
+                    <div class="highlight-card-custom min-h-[210px] md:min-h-[280px] max-h-[370px] md:max-h-[370px]">
+                        <div class="highlight-icon-wrap">
+                            <i class="ri-graduation-cap-line"></i>
                         </div>
+                        <div class="highlight-title">Prepare for Your Next Career</div>
+                        <div class="highlight-desc">Step confidently into your dream job with our support.</div>
                     </div>
-                    <div class="item">
-                        <div class="highlight-card relative rounded-2xl overflow-hidden">
-                            <img src="assets/img/courses/course-4.jpg" alt="" class="highlight-bg absolute inset-0 w-full h-full object-cover" />
-                            <div class="highlight-overlay absolute inset-0 bg-gradient-to-br from-pink-500/90 to-red-500/90"></div>
-                            <div class="highlight-content relative z-10 flex flex-col items-center justify-center h-full py-10">
-                                <span class="highlight-icon text-4xl text-white mb-4"><i class="ri-star-smile-line"></i></span>
-                                <div class="highlight-title text-white font-bold">Master Multiple Domains</div>
-                            </div>
+                    <!-- Card 4 -->
+                    <div class="highlight-card-custom min-h-[210px] md:min-h-[280px] max-h-[370px] md:max-h-[370px]">
+                        <div class="highlight-icon-wrap">
+                            <i class="ri-user-star-line"></i>
                         </div>
+                        <div class="highlight-title">Excel in Multiple Fields</div>
+                        <div class="highlight-desc">Master diverse domains and expand your opportunities.</div>
                     </div>
-                    <div class="item">
-                        <div class="highlight-card relative rounded-2xl overflow-hidden">
-                            <img src="assets/img/courses/course-5.jpg" alt="" class="highlight-bg absolute inset-0 w-full h-full object-cover" />
-                            <div class="highlight-overlay absolute inset-0 bg-gradient-to-br from-purple-500/90 to-fuchsia-600/90"></div>
-                            <div class="highlight-content relative z-10 flex flex-col items-center justify-center h-full py-10">
-                                <span class="highlight-icon text-4xl text-white mb-4"><i class="ri-lightbulb-flash-line"></i></span>
-                                <div class="highlight-title text-white font-bold">Innovative Learning</div>
-                            </div>
+                    <!-- Card 5 -->
+                    <div class="highlight-card-custom min-h-[210px] md:min-h-[280px] max-h-[370px] md:max-h-[370px]">
+                        <div class="highlight-icon-wrap">
+                            <i class="ri-team-line"></i>
                         </div>
+                        <div class="highlight-title">Join a Thriving Community</div>
+                        <div class="highlight-desc">Connect, collaborate, and grow with ambitious learners.</div>
                     </div>
                 </div>
+                <!-- Custom Nav Arrows -->
+                <button class="highlights-nav highlights-nav-prev" aria-label="Previous"><i class="ri-arrow-left-s-line"></i></button>
+                <button class="highlights-nav highlights-nav-next" aria-label="Next"><i class="ri-arrow-right-s-line"></i></button>
             </div>
         </section>
 
@@ -204,8 +245,8 @@
                 </div>
                 <div class="programs-modern-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10 mt-16">
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-1.jpg" alt="MERN Stack + Gen AI"
-                            class="w-12 h-12 object-contain">
+                        <img src="assets/img/programs-logo/mern.png" alt="MERN Stack + Gen AI"
+                            class="w-10 h-10 object-contain">
                         <div>
                             <div class="font-bold text-black">MERN STACK + GEN AI</div>
                             <div class="text-sm text-[#444]">Full stack web development with modern AI
@@ -213,7 +254,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-2.jpg" alt="Cyber Security + Gen AI"
+                        <img src="assets/img/programs-logo/cyber.png" alt="Cyber Security + Gen AI"
                             class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">CYBER SECURITY + GEN AI</div>
@@ -222,7 +263,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-3.jpg" alt="Java Expert" class="w-12 h-12 object-contain">
+                        <img src="assets/img/programs-logo/java.png" alt="Java Expert" class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">JAVA EXPERT</div>
                             <div class="text-sm text-[#444]">Master Java programming for enterprise solutions.
@@ -230,7 +271,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-4.jpg" alt="Advance Digital Marketing"
+                        <img src="assets/img/programs-logo/digital-marketing.png" alt="Advance Digital Marketing"
                             class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">ADVANCE DIGITAL MARKETING</div>
@@ -238,24 +279,24 @@
                                 strategies.</div>
                         </div>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-5.jpg" alt="UI & UX" class="w-12 h-12 object-contain">
+                    <div class="flex items-center gap-4 hidden">
+                        <img src="assets/img/programs-logo/ui-ux.png" alt="UI & UX" class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">UI & UX</div>
                             <div class="text-sm text-[#444]">Design beautiful and user-friendly interfaces.</div>
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-6.jpg" alt=".NET" class="w-12 h-12 object-contain">
+                        <img src="assets/img/programs-logo/dot-net.png" alt=".NET" class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">.NET</div>
                             <div class="text-sm text-[#444]">Develop robust applications with Microsoft .NET.
                             </div>
                         </div>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-3.jpg" alt="Java Full Stack Developer + Gen AI"
-                            class="w-12 h-12 object-contain">
+                    <div class="flex items-center gap-4 hidden">
+                        <img src="assets/img/programs-logo/full-stack-developer.png"
+                            alt="Java Full Stack Developer + Gen AI" class="w-14 h-14 object-contain">
                         <div>
                             <div class="font-bold text-black">JAVA FULL STACK DEVELOPER + GEN AI</div>
                             <div class="text-sm text-[#444]">Enterprise Java with modern full stack and AI
@@ -263,7 +304,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-4.jpg" alt="Data Science Professional Training"
+                        <img src="assets/img/programs-logo/data-science.png" alt="Data Science Professional Training"
                             class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">DATA SCIENCE PROFESSIONAL TRAINING</div>
@@ -272,15 +313,15 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/PYTHON.jpg" alt="Python Training Course"
+                        <img src="assets/img/programs-logo/python.png" alt="Python Training Course"
                             class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">PYTHON TRAINING COURSE</div>
                             <div class="text-sm text-[#444]">Python programming from basics to advanced.</div>
                         </div>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-5.jpg" alt="Business Analytics"
+                    <div class="flex items-center gap-4 hidden">
+                        <img src="assets/img/programs-logo/bussines-analytics.png" alt="Business Analytics"
                             class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">BUSINESS ANALYTICS</div>
@@ -289,7 +330,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-6.jpg" alt="AWS Professional Training"
+                        <img src="assets/img/programs-logo/aws.png" alt="AWS Professional Training"
                             class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">AWS PROFESSIONAL TRAINING</div>
@@ -297,8 +338,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-4.jpg" alt="Software Testing Course"
+                    <div class="flex items-center gap-4 hidden">
+                        <img src="assets/img/programs-logo/software-testing.png" alt="Software Testing Course"
                             class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">SOFTWARE TESTING COURSE</div>
@@ -307,7 +348,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-5.jpg" alt="Data Analytics Using Python"
+                        <img src="assets/img/programs-logo/data-analytics.png" alt="Data Analytics Using Python"
                             class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">DATA ANALYTICS USING PYTHON</div>
@@ -315,7 +356,8 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-1.jpg" alt="Generative AI" class="w-12 h-12 object-contain">
+                        <img src="assets/img/programs-logo/generative-ai.png" alt="Generative AI"
+                            class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">GENERATIVE AI</div>
                             <div class="text-sm text-[#444]">Learn the latest in generative AI technologies.
@@ -323,7 +365,8 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-2.jpg" alt="Power BI" class="w-12 h-12 object-contain">
+                        <img src="assets/img/programs-logo/power-bi.png" alt="Power BI"
+                            class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">POWER BI</div>
                             <div class="text-sm text-[#444]">Business analytics and visualization with Power BI.
@@ -331,7 +374,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="assets/img/courses/course-3.jpg" alt="AUTOCAD" class="w-12 h-12 object-contain">
+                        <img src="assets/img/programs-logo/autocad.png" alt="AUTOCAD" class="w-12 h-12 object-contain">
                         <div>
                             <div class="font-bold text-black">AUTOCAD</div>
                             <div class="text-sm text-[#444]">Professional training in AutoCAD design tools.</div>
@@ -343,6 +386,7 @@
 
         <!-- About section -->
         <section id="about-vtech" class="relative bg-white overflow-hidden">
+            <img src="assets/img/highlight-banner.png" alt="" class="w-full h-full object-cover absolute top-0 left-0 opacity-10">
             <!-- Animated Blobs -->
             <!-- <div
                 class="absolute top-0 -right-12 w-96 h-96 bg-[#ffddd9] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob">
@@ -367,8 +411,7 @@
                     <div class="lg:col-span-5 text-slate-900 space-y-5 xl:space-y-8">
                         <h2 class="text-2xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-tight">
                             Empowering Your Future with
-                            <span
-                                class="text-[#0e1d6e] font-bold">
+                            <span class="text-[#0e1d6e] font-bold">
                                 Real Skills & Real Results
                             </span>
                         </h2>
@@ -380,28 +423,28 @@
                         <!-- Key Highlights -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 about-counter-container">
                             <div
-                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                                class="flex items-center gap-3 border-l-4 border-[#ca3f2c] px-4 py-3 rounded-lg">
                                 <i class="ri-graduation-cap-line text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b] text-sm lg:text-xs xl:text-base"><span
                                         class="about-counter-students font-semibold min-w-[45px] lg:min-w-[40px] xl:min-w-[52px] inline-block">0</span>+
                                     Students Trained</span>
                             </div>
                             <div
-                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                                class="flex items-center gap-3 border-l-4 border-[#ca3f2c] px-4 py-3 rounded-lg">
                                 <i class="ri-briefcase-4-line text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b] text-sm lg:text-xs xl:text-base"><span
                                         class="about-counter-placement font-semibold min-w-[24px] lg:min-w-[20px] xl:min-w-[27px] inline-block">0</span>%
                                     Placement Assistance</span>
                             </div>
                             <div
-                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                                class="flex items-center gap-3 border-l-4 border-[#ca3f2c] px-4 py-3 rounded-lg">
                                 <i class="ri-award-line text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b] text-sm lg:text-xs xl:text-base"><span
                                         class="about-counter-years font-semibold min-w-[15px] lg:min-w-[13px] xl:min-w-[16.5px] inline-block">0</span>+
                                     Years Experience</span>
                             </div>
                             <div
-                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                                class="flex items-center gap-3 border-l-4 border-[#ca3f2c] px-4 py-3 rounded-lg">
                                 <i class="ri-star-smile-line text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b] text-sm lg:text-xs xl:text-base"><span
                                         class="about-counter-rating font-semibold min-w-[22px] lg:min-w-[19px] xl:min-w-[25px] inline-block">0</span>/5
@@ -413,26 +456,33 @@
             </div>
         </section>
 
-        <!-- Guidance/Contact Section (above Upcoming Batches) -->
-        <section class="guidance-section relative">
-            <!-- Background Image -->
-            <div class="guidance-bg-img absolute inset-0 w-full h-full z-0"></div>
-            <!-- Dark Overlay -->
-            <div class="guidance-bg-overlay absolute inset-0 w-full h-full z-10"></div>
-            <div class="container mx-auto px-5 md:px-10 flex flex-col items-center justify-center gap-7 relative z-20">
-                <div class="guidance-content flex flex-col items-center text-center gap-5 w-full">
-                    <h2 class="guidance-heading flex flex-col">Need Career Guidance? <span>Talk to Our Experts!</span>
-                    </h2>
-                    <p class="guidance-subheading">Our counselors are ready to help you choose the right course and
-                        career path for your goals.</p>
-                    <div class="guidance-contacts flex flex-col sm:flex-row gap-4 w-full justify-center">
-                        <a href="tel:+919818734560" class="btn-primary text-white flex items-center gap-2 justify-center">
-                            <i class="fa-solid fa-phone"></i> Call: +91-9818734560
-                        </a>
-                        <a href="https://wa.me/919818734560" target="_blank"
-                            class="btn-primary text-white flex items-center gap-2 justify-center bg-[#22c55e] hover:bg-[#1da750]">
-                            <i class="fa-brands fa-whatsapp"></i> WhatsApp: +91-9818734560
-                        </a>
+        <!-- Guidance Section (New) -->
+        <section class="guidance-section py-16 bg-white rounded-lg">
+            <div class="container mx-auto px-5 md:px-10 flex justify-center items-center">
+                <div class="grid lg:grid-cols-9 rounded-lg shadow-lg overflow-hidden">
+                    <!-- Left: Content -->
+                    <div class="guidance-content py-14 px-5 md:py-20 md:px-10 lg:col-span-5">
+                        <div
+                                class="inline-flex items-center gap-3 border border-[#0e1d6e] bg-transparent text-[#0e1d6e] px-4 py-2 rounded-full">
+                                <span class="w-2 h-2 bg-[#0e1d6e] rounded-full animate-pulse"></span>
+                                <span class="text-sm font-semibold">Career Guidance</span>
+                            </div>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-800 my-5 leading-tight">Personalized Guidance for Your Bright Future</h2>
+                        <p class="sm:text-lg text-slate-600 mb-6 max-w-xl">Get expert advice, clear your doubts, and plan your career path with our experienced mentors. We help you choose the right course, prepare for interviews, and achieve your goals with confidence.</p>
+                        <ul class="mb-8 space-y-3">
+                            <li class="flex items-center text-base text-slate-700"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>1:1 Counseling Sessions</li>
+                            <li class="flex items-center text-base text-slate-700"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>Roadmap for Your Dream Career</li>
+                            <li class="flex items-center text-base text-slate-700"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>Ongoing Support & Motivation</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-4 mt-4">
+                            <a href="#counselling" class="btn-primary px-10 py-3 text-base font-semibold flex items-center gap-2"><i class="ri-customer-service-2-line text-lg"></i> Call Us</a>
+                            <a href="https://wa.me/919818734560" target="_blank" class="btn-whatsapp px-10 py-3 text-base font-semibold flex items-center gap-2"><i class="ri-whatsapp-line text-lg"></i> WhatsApp</a>
+                
+                        </div>
+                    </div>
+                    <!-- Right: Image -->
+                    <div class="guidance-img-wrap flex justify-center bg-[#9757ff] col-span-4">
+                        <img src="assets/img/hero-student.png" alt="Career Guidance" class="guidance-img w-full max-w-md object-cover" />
                     </div>
                 </div>
             </div>
@@ -543,7 +593,8 @@
         </section>
 
         <!-- start your journey section -->
-        <section class="relative bg-white overflow-hidden">
+        <section class="relative bg-white overflow-hidden start-your-journey-section">
+            <img src="assets/img/highlight-banner.png" alt="" class="w-full h-full object-cover absolute top-0 left-0 opacity-10">
             <!-- Animated Blobs -->
             <!-- <div
                 class="absolute top-0 -right-12 w-96 h-96 bg-[#ffddd9] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob">
@@ -555,7 +606,7 @@
                 class="absolute -bottom-16 right-20 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-4000">
             </div> -->
 
-            <div class="container mx-auto relative z-10 py-16 px-5 md:px-10">
+            <div class="container mx-auto relative z-20 py-16 px-5 md:px-10">
                 <div class="grid lg:grid-cols-9 gap-16 items-center">
                     <!-- Left: Content -->
                     <div class="lg:col-span-5 text-slate-900 space-y-8">
@@ -567,8 +618,7 @@
 
                         <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             Advance Your Career with
-                            <span
-                                class="text-[#0e1d6e] font-bold">
+                            <span class="text-[#0e1d6e] font-bold">
                                 Professional Tech Education
                             </span>
                         </h1>
@@ -581,30 +631,29 @@
                         <!-- Key Highlights/USPs -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
                             <div
-                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                                class="flex items-center gap-3 border-l-4 border-[#ca3f2c] px-4 py-3 rounded-lg">
                                 <i class="fa-solid fa-certificate text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b]">Govt. Recognized</span>
                             </div>
                             <div
-                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                                class="flex items-center gap-3 border-l-4 border-[#ca3f2c] px-4 py-3 rounded-lg">
                                 <i class="fa-solid fa-briefcase text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b]">Placement Support</span>
                             </div>
                             <div
-                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                                class="flex items-center gap-3 border-l-4 border-[#ca3f2c] px-4 py-3 rounded-lg">
                                 <i class="fa-solid fa-chalkboard-user text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b]">Expert Mentors</span>
                             </div>
                             <div
-                                class="flex items-center gap-3 bg-white border-l-4 border-[#ca3f2c] shadow-sm px-4 py-3 rounded-lg">
+                                class="flex items-center gap-3 border-l-4 border-[#ca3f2c] px-4 py-3 rounded-lg">
                                 <i class="fa-solid fa-laptop-code text-[#ca3f2c] text-lg"></i>
                                 <span class="font-semibold text-[#1e293b]">Live Projects</span>
                             </div>
                         </div>
 
                         <div class="flex flex-wrap gap-6 items-center">
-                            <a href="#courses"
-                                class="btn-primary">
+                            <a href="#courses" class="btn-primary">
                                 <i class="fa-solid fa-book-open"></i>
                                 Explore Courses
                             </a>
@@ -753,12 +802,16 @@
     </main>
 
     <!-- Fixed Bottom Consultation Form: Only for lg and above -->
-    <div class="bottom-inquery-form hidden lg:flex fixed bottom-0 left-0 w-full z-50">
+    <div class="bottom-inquery-form hidden lg:flex fixed -bottom-full left-0 w-full z-50 transition-all duration-500">
         <form class="bottom-inquery-form-inner flex w-full gap-4 items-center justify-center">
-            <input type="text" placeholder="Your Name" class="px-4 py-2 rounded-md bg-gray-50 border border-gray-200 focus:border-[#ffc500] focus:ring-2 focus:ring-[#ffc500]/20 outline-none transition-all bottom-inquery-form-input" />
-            <input type="email" placeholder="Email" class="px-4 py-2 rounded-md bg-gray-50 border border-gray-200 focus:border-[#ffc500] focus:ring-2 focus:ring-[#ffc500]/20 outline-none transition-all bottom-inquery-form-input" />
-            <input type="tel" placeholder="Phone" class="px-4 py-2 rounded-md bg-gray-50 border border-gray-200 focus:border-[#ffc500] focus:ring-2 focus:ring-[#ffc500]/20 outline-none transition-all bottom-inquery-form-input" />
-            <select class="px-4 py-3 rounded-md bg-gray-50 border border-gray-200 focus:border-[#ffc500] focus:ring-2 focus:ring-[#ffc500]/20 outline-none transition-all bottom-inquery-form-input">
+            <input type="text" placeholder="Your Name"
+                class="px-4 py-2 rounded-md bg-gray-50 border border-gray-200 focus:border-[#ffc500] focus:ring-2 focus:ring-[#ffc500]/20 outline-none transition-all bottom-inquery-form-input" />
+            <input type="email" placeholder="Email"
+                class="px-4 py-2 rounded-md bg-gray-50 border border-gray-200 focus:border-[#ffc500] focus:ring-2 focus:ring-[#ffc500]/20 outline-none transition-all bottom-inquery-form-input" />
+            <input type="tel" placeholder="Phone"
+                class="px-4 py-2 rounded-md bg-gray-50 border border-gray-200 focus:border-[#ffc500] focus:ring-2 focus:ring-[#ffc500]/20 outline-none transition-all bottom-inquery-form-input" />
+            <select
+                class="px-4 py-3 rounded-md bg-gray-50 border border-gray-200 focus:border-[#ffc500] focus:ring-2 focus:ring-[#ffc500]/20 outline-none transition-all bottom-inquery-form-input">
                 <option value="">Interested Course</option>
                 <option value="web">Web Development</option>
                 <option value="data">Data Science</option>
@@ -866,7 +919,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/custom.js"></script>
 
-    
+
 
 </body>
 

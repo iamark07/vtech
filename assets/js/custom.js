@@ -40,3 +40,16 @@ if (menuBtn && menuClose && menuOverlay && menuBar) {
   // Initial call
   adjustFixedBtnPosition();
 })();
+
+// Sticky header and bottom form on scroll
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('.main-header');
+  var bottomForm = document.querySelector('.bottom-inquery-form');
+  if (window.scrollY >= 44) {
+    if(header) header.classList.add('fixed-header');
+    if(bottomForm) bottomForm.classList.add('show-bottom-form');
+  } else {
+    if(header) header.classList.remove('fixed-header');
+    if(bottomForm) bottomForm.classList.remove('show-bottom-form');
+  }
+});

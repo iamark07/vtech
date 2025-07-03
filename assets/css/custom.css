@@ -41,39 +41,65 @@ body {
   background-color: var(--bg-light);
 }
 
-.nav-link {
-  position: relative;
-  transition: all 0.3s ease;
-  color: black;
+/* top bar section*/
+
+.top-bar {
+  background: #222222;
+  color: #fff;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  /* border-bottom: 1px solid #e5e7eb; */
+  z-index: 50;
+}
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.top-bar a:hover,
+.top-bar a:focus {
+  color: #ffc500; /
+}
+.top-bar-contact i {
+  margin-right: 4px;
+  font-size: 1rem;
+}
+.top-bar-social-link {
+  transition: background 0.2s, color 0.2s;
+  font-size: 1rem;
+}
+.top-bar-social-link:hover {
+  color: #e9b200 !important;
+}
+@media (max-width: 640px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .top-bar-contact, .top-bar-social {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 1.5px;
-  background: var(--primary);
-  transition: width 0.3s ease;
-  opacity: 0.8;
-}
-.nav-link:hover::after {
-  width: 100%;
-}
+
 
 /* Generic Header Custom Utility Classes */
 
 .main-header {
-  position: sticky;
+  position: absolute;
   top: 0;
   width: 100%;
-  z-index: 50;
-  background-color: #700000;
-  backdrop-filter: blur(8px);
+  z-index: 900;
+  background-color: #84848474;
+  backdrop-filter: blur(2px);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all .3s;
 }
 
 .header-nav {
@@ -89,11 +115,8 @@ body {
   right: 0;
   transform: translateY(-50%);
   display: none;
-  background: #fff;
-  border-radius: 10px;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 1.25rem;
+  border-radius: 10px 0px 0px 10px;
+  padding: 1.25rem 0rem;
   padding-bottom: 1.25rem;
   align-items: center;
   box-shadow: 0 4px 20px rgba(202, 63, 44, 0.12);
@@ -106,7 +129,6 @@ body {
 }
 @media (min-width: 1280px) {
   .header-nav-wrapper {
-    padding-right: 4rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
@@ -116,7 +138,8 @@ body {
   text-transform: uppercase;
   font-family: "Outfit", sans-serif;
   font-weight: 500;
-  color: #1e293b;
+  /* color: white; */
+  color: #ffffff;
   position: relative;
 }
 .header-link::after {
@@ -126,10 +149,9 @@ body {
   left: 0%;
   width: 0;
   height: 1.5px;
-  background: linear-gradient(90deg, #991b1b 0%, #b91c1c 100%);
+  background: #ffc500;
   border-radius: 2px;
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0.9;
 }
 
 .header-link:hover::after,
@@ -145,7 +167,7 @@ body {
 
 .header-divider {
   padding-left: 2rem;
-  border-left: 1px solid rgba(0, 0, 0, 0.114);
+  border-left: 1px solid rgba(255, 255, 255, 0.184);
 }
 
 .btn-primary {
@@ -280,7 +302,7 @@ body {
   min-width: 0;
 }
 .footer-logo-simple {
-  width: 140px;
+  width: 200px;
   margin-bottom: 0.5rem;
 }
 .footer-tagline-simple {
@@ -387,14 +409,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 44px;
-  min-height: 44px;
-  background: rgba(255, 255, 255, 0.13);
-  border-radius: 0.4rem;
   font-size: 1.2rem;
   color: #fff;
-  border: 1.5px solid #fff3;
-  margin-top: 2px;
 }
 .footer-contact-text {
   font-size: 1rem;
@@ -413,18 +429,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.1rem;
-  height: 2.1rem;
-  background: #fff;
-  border-radius: 50%;
-  color: #ca3f2c;
+  color: #ffffff;
   font-size: 1.05rem;
   box-shadow: 0 2px 8px #ca3f2c11;
   transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 .footer-social-simple a:hover {
-  background: #e15340;
-  color: #fff;
+  color: #e9b200;
 }
 .footer-bottom-simple {
   border-top: 1.5px solid #fff7;
@@ -459,7 +470,7 @@ body {
     gap: 1.5rem;
   }
   .footer-logo-simple {
-    width: 100px;
+    width: 180px;
     padding: 0.2rem 0.4rem;
   }
   .footer-bottom-simple {
@@ -621,4 +632,16 @@ body {
   }
 }
 /* === End VTECH Fixed Bottom Consultation Form === */
+
+/* Sticky header on scroll */
+.fixed-header {
+  position: fixed !important;
+  background: #700000 !important;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+/* Show bottom form on scroll */
+.show-bottom-form {
+  bottom: 0 !important;
+}
 

@@ -8,9 +8,10 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Hero Image Slider
+// Hero Image & Text Slider
 (function () {
   const slides = document.querySelectorAll(".hero-slide");
+  const textSlides = document.querySelectorAll(".hero-text-slide");
   let current = 0;
   let timer = null;
   const interval = 4000;
@@ -19,6 +20,11 @@ window.addEventListener("scroll", function () {
     slides.forEach((slide, i) => {
       slide.classList.toggle("active", i === idx);
     });
+    if (textSlides.length) {
+      textSlides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === idx);
+      });
+    }
     current = idx;
   }
 
@@ -135,20 +141,27 @@ $(document).ready(function () {
 
 // Highlights Owl Carousel
 $(document).ready(function(){
-  $('.highlights-carousel').owlCarousel({
+  var $carousel = $('.highlights-carousel').owlCarousel({
     loop: true,
-    margin: 16,
+    margin: 8,
     responsiveClass: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3500,
     smartSpeed: 600,
+    nav: false,
+    dots: false,
     responsive: {
-      0: { items: 2,
-        margin: 8,
-       },
-      768: { items: 3 },
-      900: { items: 4 },
-      1200: { items: 5 }
+      0: { items: 1},
+      768: { items: 2},
+      1280: { items: 3 },
+      1400: { items: 4 }
     }
+  });
+  // Custom nav
+  $('.highlights-nav-prev').click(function(){
+    $carousel.trigger('prev.owl.carousel');
+  });
+  $('.highlights-nav-next').click(function(){
+    $carousel.trigger('next.owl.carousel');
   });
 });
