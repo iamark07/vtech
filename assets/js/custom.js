@@ -45,11 +45,35 @@ if (menuBtn && menuClose && menuOverlay && menuBar) {
 window.addEventListener('scroll', function() {
   var header = document.querySelector('.main-header');
   var bottomForm = document.querySelector('.bottom-inquery-form');
+  var mobile_bottom_bar = document.querySelector('.mobile-bottom-bar');
   if (window.scrollY >= 44) {
     if(header) header.classList.add('fixed-header');
     if(bottomForm) bottomForm.classList.add('show-bottom-form');
+
   } else {
     if(header) header.classList.remove('fixed-header');
     if(bottomForm) bottomForm.classList.remove('show-bottom-form');
   }
+
+  if (window.scrollY >= 170) {
+    if(mobile_bottom_bar) mobile_bottom_bar.classList.add('show-mobile-bottom-bar');
+  }
+  else{
+    if(mobile_bottom_bar) mobile_bottom_bar.classList.remove('show-mobile-bottom-bar');
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const icons = document.querySelectorAll('.mobile-bottom-bar .bottom-bar-icon');
+  let current = 0;
+  function shakeNextIcon() {
+    icons.forEach(icon => icon.classList.remove('ring-shake'));
+    icons[current].classList.add('ring-shake');
+    setTimeout(() => {
+      icons[current].classList.remove('ring-shake');
+      current = (current + 1) % icons.length;
+      setTimeout(shakeNextIcon, 1000); // 1s gap between icons
+    }, 700); // shake duration
+  }
+  if (icons.length) shakeNextIcon();
 });

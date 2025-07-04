@@ -94,8 +94,8 @@ body {
   top: 0;
   width: 100%;
   z-index: 900;
-  background-color: #84848474;
-  backdrop-filter: blur(2px);
+  /* background-color: #84848474;
+  backdrop-filter: blur(2px); */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -147,11 +147,12 @@ body {
   /* color: white; */
   color: #ffffff;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
 }
 
 .header-link:hover {
-  text-decoration: underline;
+  border-color: #ffea00;
 }
 
 
@@ -163,7 +164,7 @@ body {
 
 .header-divider {
   padding-left: 2rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.184);
+  /* border-left: 1px solid rgba(255, 255, 255, 0.184); */
 }
 
 .btn-primary {
@@ -384,7 +385,7 @@ body {
 .footer-pill:hover {
   background: linear-gradient(90deg, #ca3f2c 60%, #e15340 100%);
   color: #fff;
-  transform: translateY(-2px) scale(1.04);
+  /* transform: translateY(-2px) scale(1.04); */
   box-shadow: 0 4px 16px #ca3f2c33;
 }
 .footer-contact-details {
@@ -480,7 +481,7 @@ body {
   .footer-contact-icon {
     min-width: 34px;
     min-height: 34px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   .footer-contact-text {
     font-size: 0.92rem;
@@ -532,10 +533,10 @@ body {
     color: #ffffff;
 }
 .fixed-btn-whatsapp:hover {
-  transform: translateY(-3px) scale(1.08);
+  /* transform: translateY(-3px) scale(1.08); */
 }
 .fixed-btn-call:hover {
-  transform: translateY(-3px) scale(1.08);
+  /* transform: translateY(-3px) scale(1.08); */
   box-shadow: 0 10px 32px rgba(202, 63, 44, 0.22), 0 2px 8px rgba(0, 0, 0, 0.1);
   filter: brightness(1.08);
 }
@@ -587,10 +588,11 @@ body {
   bottom: 0 !important;
 }
 .bottom-inquery-form {
-  background: #14305c;
+  background: #ffffff;
   box-shadow: 0 -2px 24px 0 rgba(20, 48, 92, 0.10);
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  border-top: 3px solid #ffc500;
 }
 .bottom-inquery-form-inner {
   width: 100%;
@@ -635,6 +637,79 @@ body {
 
 
 /* === End VTECH Fixed Bottom Consultation Form === */
+
+/* Mobile Bottom Bar */
+.mobile-bottom-bar {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100vw;
+  background: #0e4a8a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0 8px 0;
+  z-index: 9999;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -2px 16px 0 rgba(0,0,0,0.10);
+  transition: all 0.5s;
+}
+
+.show-mobile-bottom-bar{
+  bottom: 0px;
+}
+/* @keyframes icon-shake {
+  0% { transform: translateX(0) rotate(0); }
+  20% { transform: translateX(-4px) rotate(-10deg); }
+  40% { transform: translateX(4px) rotate(10deg); }
+  60% { transform: translateX(-4px) rotate(-10deg); }
+  80% { transform: translateX(4px) rotate(10deg); }
+  100% { transform: translateX(0) rotate(0); }
+} */
+.bottom-bar-icon {
+  color: #fff;
+  font-size: 1.7rem;
+  background: transparent;
+  border-radius: 50%;
+  transition: transform 0.2s, background 0.3s;
+  position: relative;
+  animation: icon-shake 1.2s infinite;
+}
+/* .bottom-bar-icon.phone { animation-delay: 0s; }
+.bottom-bar-icon.whatsapp { animation-delay: 0.3s; }
+.bottom-bar-icon.email { animation-delay: 0.6s; }
+.bottom-bar-icon:hover {
+  background: #fff;
+  color: #0e4a8a;
+  transform: scale(1.2) rotate(-8deg);
+} */
+/* @keyframes icon-bounce {
+  0% { transform: translateY(0);}
+  50% { transform: translateY(-8px) scale(1.1);}
+  100% { transform: translateY(0);}
+} */
+/* Only show on <=1024px (lg) */
+@media (min-width: 769px) {
+  .mobile-bottom-bar { display: none !important; }
+}
+
+@keyframes phone-ring-shake {
+  0% { transform: rotate(0); }
+  10% { transform: rotate(-18deg); }
+  20% { transform: rotate(16deg); }
+  30% { transform: rotate(-14deg); }
+  40% { transform: rotate(12deg); }
+  50% { transform: rotate(-10deg); }
+  60% { transform: rotate(8deg); }
+  70% { transform: rotate(-6deg); }
+  80% { transform: rotate(4deg); }
+  90% { transform: rotate(-2deg); }
+  100% { transform: rotate(0); }
+}
+
+.bottom-bar-icon.ring-shake {
+  animation: phone-ring-shake 0.7s;
+}
 
 
 
