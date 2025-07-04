@@ -648,7 +648,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 12px 0 8px 0;
+  padding: 8px 0 8px 0;
   z-index: 9999;
   border-radius: 18px 18px 0 0;
   box-shadow: 0 -2px 16px 0 rgba(0,0,0,0.10);
@@ -668,7 +668,7 @@ body {
 } */
 .bottom-bar-icon {
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   background: transparent;
   border-radius: 50%;
   transition: transform 0.2s, background 0.3s;
