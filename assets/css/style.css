@@ -136,9 +136,9 @@
   right: 18px;
   background: #fff;
   color: #0e4a8a;
-  font-weight: 700;
-  font-size: 0.8rem;
-  padding: 7px 18px 7px 18px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding: 6px 17px 6px 17px;
   border-radius: 999px;
   box-shadow: 0 2px 12px rgba(30,41,59,0.10);
   z-index: 20;
@@ -147,7 +147,7 @@
   transition: background 0.2s, color 0.2s;
 }
 
-/* .highlight-icon-wrap {
+.highlight-icon-wrap {
   width: 80px;
   height: 80px;
   background: white;
@@ -158,10 +158,23 @@
   margin-bottom: 1.2rem;
   margin-top: -2.2rem;
 }
-.highlight-icon-wrap i {
-  font-size: 2rem;
-  color: #ffd740;
-} */
+.highlight-icon-wrap img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+@media (max-width: 900px) {
+  .highlight-icon-wrap {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 1rem;
+    margin-top: -1.5rem;
+  }
+  .highlight-icon-wrap img {
+    width: 36px;
+    height: 36px;
+  }
+}
 .highlight-title {
   font-size: 1.2rem;
   font-weight: 600;
@@ -210,8 +223,10 @@
     max-width: 95vw;
   }
   .highlight-badge {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding: 5px 12px;
+    right: 12px;
+    top: 12px;
   }
 
   /* .highlight-icon-wrap {
@@ -668,4 +683,5 @@ left: 0;
     height: 32px;
   }
 }
+
 
