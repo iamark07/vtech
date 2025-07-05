@@ -648,7 +648,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 8px 0 8px 0;
   z-index: 9999;
   border-radius: 18px 18px 0 0;
   box-shadow: 0 -2px 16px 0 rgba(0,0,0,0.10);
@@ -658,36 +657,16 @@ body {
 .show-mobile-bottom-bar{
   bottom: 0px;
 }
-/* @keyframes icon-shake {
-  0% { transform: translateX(0) rotate(0); }
-  20% { transform: translateX(-4px) rotate(-10deg); }
-  40% { transform: translateX(4px) rotate(10deg); }
-  60% { transform: translateX(-4px) rotate(-10deg); }
-  80% { transform: translateX(4px) rotate(10deg); }
-  100% { transform: translateX(0) rotate(0); }
-} */
 .bottom-bar-icon {
   color: #fff;
   font-size: 1.5rem;
   background: transparent;
   border-radius: 50%;
-  transition: transform 0.2s, background 0.3s;
   position: relative;
-  animation: icon-shake 1.2s infinite;
+  padding: 10px 15px;
+  
 }
-/* .bottom-bar-icon.phone { animation-delay: 0s; }
-.bottom-bar-icon.whatsapp { animation-delay: 0.3s; }
-.bottom-bar-icon.email { animation-delay: 0.6s; }
-.bottom-bar-icon:hover {
-  background: #fff;
-  color: #0e4a8a;
-  transform: scale(1.2) rotate(-8deg);
-} */
-/* @keyframes icon-bounce {
-  0% { transform: translateY(0);}
-  50% { transform: translateY(-8px) scale(1.1);}
-  100% { transform: translateY(0);}
-} */
+
 /* Only show on <=1024px (lg) */
 @media (min-width: 769px) {
   .mobile-bottom-bar { display: none !important; }
@@ -707,7 +686,7 @@ body {
   100% { transform: rotate(0); }
 }
 
-.bottom-bar-icon.ring-shake {
+.bottom-call-icon.ring-shake {
   animation: phone-ring-shake 0.7s;
 }
 

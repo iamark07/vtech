@@ -72,8 +72,35 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
       icons[current].classList.remove('ring-shake');
       current = (current + 1) % icons.length;
-      setTimeout(shakeNextIcon, 1000); // 1s gap between icons
+      setTimeout(shakeNextIcon, 500); // 1s gap between icons
     }, 700); // shake duration
   }
   if (icons.length) shakeNextIcon();
+
+  // Mobile consultation popup logic
+  var mailIcon = document.querySelector('.mobile-bottom-bar .email');
+  var modal = document.getElementById('mobile-consultation-modal');
+  var closeBtn = document.getElementById('close-mobile-consultation');
+
+  function isMobileWidth() {
+    return window.innerWidth <= 1024;
+  }
+
+  if (mailIcon && modal && closeBtn) {
+    mailIcon.addEventListener('click', function(e) {
+      if (isMobileWidth()) {
+        e.preventDefault();
+        modal.classList.remove('hidden');
+      }
+    });
+    closeBtn.addEventListener('click', function() {
+      modal.classList.add('hidden');
+    });
+    // Optional: close modal on clicking outside the form
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  }
 });

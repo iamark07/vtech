@@ -165,3 +165,22 @@ $(document).ready(function(){
     $carousel.trigger('next.owl.carousel');
   });
 });
+
+document.querySelectorAll('.batch-cat-pill').forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Nav active state
+    document.querySelectorAll('.batch-cat-pill').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    // Category logic
+    const cat = this.getAttribute('data-category');
+    document.querySelectorAll('.batch-card-premium').forEach(card => {
+      if (cat === 'all') {
+        card.classList.remove('batch-card-hide');
+      } else if (card.classList.contains('batch-cat-' + cat)) {
+        card.classList.remove('batch-card-hide');
+      } else {
+        card.classList.add('batch-card-hide');
+      }
+    });
+  });
+});

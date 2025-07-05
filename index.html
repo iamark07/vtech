@@ -45,32 +45,12 @@
 </head>
 
 <body class="font-[Inter] bg-[#f8f9fa] overflow-x-hidden">
-    <div class="mobile-bottom-bar">
-      <a href="tel:919818734560" class="bottom-bar-icon phone" aria-label="Call">
-        <i class="ri-phone-fill"></i>
-      </a>
-      <a href="https://wa.me/919818734560" class="bottom-bar-icon whatsapp" aria-label="WhatsApp" target="_blank">
-        <i class="ri-whatsapp-line"></i>
-      </a>
-      <a href="mailto:YOUR_EMAIL" class="bottom-bar-icon email" aria-label="Email">
-        <i class="ri-mail-line"></i>
-      </a>
-    </div>
 
-    <!-- Fixed WhatsApp & Call Button -->
-    <div id="fixed-contact-btns" class="!hidden shadow-md">
-        <div class="fixed-contact-btn-inner">
-            <a href="https://wa.me/919818734560" target="_blank" class="fixed-btn fixed-btn-whatsapp" title="WhatsApp">
-                <img src="assets/img/whatsapp.png" alt="" class="w-8">
-            </a>
-            <a href="tel:+919818734560" class="fixed-btn fixed-btn-call" title="Call">
-                <i class="ri-phone-fill"></i>
-            </a>
-        </div>
-    </div>
+
+    <!-- top bar section -->
     <div class="top-bar w-full py-3 text-sm hidden lg:flex">
-        <div class="container mx-auto px-5 md:px-10 flex justify-between">
-            <div class="top-bar-contact flex items-center gap-4">
+        <div class="container mx-auto px-5 md:px-10 flex justify-end">
+            <div class="top-bar-contact flex items-center gap-4 hidden">
                 <a href="tel:+919818734560" class="flex items-center gap-1"><i class="ri-phone-fill"></i>
                     +91-9818734560</a>
                 <a href="mailto:vtechaocwebmail@gmail.com" class="flex items-center gap-1"><i class="ri-mail-fill"></i>
@@ -95,14 +75,14 @@
                     <nav class="header-nav py-3 relative">
                         <div class="flex justify-between order-2 lg:order-1">
                             <div class="flex items-center gap-2">
-                                <a href="/" class="text-2xl font-bold flex items-center gap-3">
+                                <a href="index.html" class="text-2xl font-bold flex items-center gap-3">
                                     <img src="assets/img/logo/logo.png" alt="VTECH Academy of Computer"
                                         class="w-28 sm:w-44">
                                 </a>
                             </div>
                             <!-- Mobile Only: Free Counselling & Call -->
                             <div class="flex items-center justify-between hidden">
-                                <a href="#counselling"
+                                <a href="tel:+919818734560"
                                     class="btn-primary text-[10px] h-fit px-3 items-center gap-[5px]">
                                     <i class="ri-phone-fill text-xs"></i>
                                     Free Counseling
@@ -118,14 +98,11 @@
                                 <a href="#home" class="header-link">Home</a>
                                 <a href="#courses" class="header-link">Courses</a>
                                 <a href="#about" class="header-link">About</a>
-                                <a href="#team" class="header-link">Team</a>
                                 <a href="#gallery" class="header-link">Gallery</a>
-                                <a href="#faq" class="header-link">Faq</a>
-                                <a href="#blog" class="header-link">Blog</a>
                                 <a href="#contact" class="header-link">Contact</a>
                             </div>
                             <div class="header-divider hidden xl:block">
-                                <a href="#counselling" class="btn-primary">
+                                <a href="tel:+919818734560" class="btn-primary">
                                     <i class="ri-phone-fill text-lg"></i>
                                     Free Counseling
                                 </a>
@@ -142,14 +119,11 @@
                         </div>
                         <nav class="mobile-menu-links">
                             <a href="#home" class="mobile-menu-link mobile-menu-link-active">Home</a>
-                            <a href="#about" class="mobile-menu-link">About</a>
                             <a href="#courses" class="mobile-menu-link">Courses</a>
-                            <a href="#team" class="mobile-menu-link">Team</a>
+                            <a href="#about" class="mobile-menu-link">About</a>
                             <a href="#gallery" class="mobile-menu-link">Gallery</a>
-                            <a href="#faq" class="mobile-menu-link">Faq</a>
-                            <a href="#blog" class="mobile-menu-link">Blog</a>
                             <a href="#contact" class="mobile-menu-link">Contact</a>
-                            <a href="#counselling" class="btn-primary mobile-menu-btn"><i
+                            <a href="tel:+919818734560" class="btn-primary mobile-menu-btn text-sm"><i
                                     class="ri-phone-fill text-lg"></i>
                                 Free
                                 Counseling</a>
@@ -207,60 +181,60 @@
                     <!-- Card 1 -->
                     <div
                         class="highlight-card-custom min-h-[230px] md:min-h-[280px] max-h-[390px] md:max-h-[370px] relative overflow-hidden">
-                        <div class="w-full h-full absolute top-0 left-0 opacity-80 bg-[#103f72]" alt=""></div>
+                        <span class="highlight-badge">Popular</span>
+                        <img src="assets/img/courses/course-1.jpg"
+                            class="w-full h-full absolute top-0 left-0 opacity-80 object-cover" alt="">
+                        <div class="w-full h-full absolute top-0 left-0 opacity-90 bg-[#103f72] z-10" alt=""></div>
                         <div class="relative z-10 flex flex-col items-center">
-                            <div class="highlight-icon-wrap">
-                                <!-- <i class="ri-brain-line"></i> -->
-                                <img src="assets/img/highlight-section-img/skill.png" alt="" class="!w-12 lg:!w-14">
-                            </div>
+                            <!-- <div class="highlight-icon-wrap">...</div> -->
                             <div class="highlight-title">Build Essential Skills</div>
                             <div class="highlight-desc">Gain practical knowledge for real-world success.</div>
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="highlight-card-custom min-h-[230px] md:min-h-[280px] max-h-[390px] md:max-h-[370px] relative overflow-hidden">
-                        <div class="w-full h-full absolute top-0 left-0 opacity-80 bg-[#103f72]" alt=""></div>
+                    <div
+                        class="highlight-card-custom min-h-[230px] md:min-h-[280px] max-h-[390px] md:max-h-[370px] relative overflow-hidden">
+                        <span class="highlight-badge">Top Rated</span>
+                        <img src="assets/img/courses/course-2.jpg"
+                            class="w-full h-full absolute top-0 left-0 opacity-80 object-cover" alt="">
+                        <div class="w-full h-full absolute top-0 left-0 opacity-90 bg-[#103f72] z-10" alt=""></div>
                         <div class="relative z-10 flex flex-col items-center">
-                            <div class="highlight-icon-wrap">
-                                <!-- <i class="ri-award-line"></i> -->
-                                <img src="assets/img/highlight-section-img/certificate.png" alt="" class="!w-12 lg:!w-14">
-                            </div>
                             <div class="highlight-title">Get Certified & Recognized</div>
                             <div class="highlight-desc">Earn certificates and degrees to showcase your expertise.</div>
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="highlight-card-custom min-h-[230px] md:min-h-[280px] max-h-[390px] md:max-h-[370px] relative overflow-hidden">
-                        <div class="w-full h-full absolute top-0 left-0 opacity-80 bg-[#103f72]" alt=""></div>
+                    <div
+                        class="highlight-card-custom min-h-[230px] md:min-h-[280px] max-h-[390px] md:max-h-[370px] relative overflow-hidden">
+                        <span class="highlight-badge">Trending</span>
+                        <img src="assets/img/courses/course-3.jpg"
+                            class="w-full h-full absolute top-0 left-0 opacity-80 object-cover" alt="">
+                        <div class="w-full h-full absolute top-0 left-0 opacity-90 bg-[#103f72] z-10" alt=""></div>
                         <div class="relative z-10 flex flex-col items-center">
-                            <div class="highlight-icon-wrap">
-                                <!-- <i class="ri-graduation-cap-line"></i> -->
-                                <img src="assets/img/highlight-section-img/career.png" alt="" class="!w-12 lg:!w-14">
-                            </div>
                             <div class="highlight-title">Prepare for Your Next Career</div>
                             <div class="highlight-desc">Step confidently into your dream job with our support.</div>
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div class="highlight-card-custom min-h-[230px] md:min-h-[280px] max-h-[390px] md:max-h-[370px] relative overflow-hidden">
-                        <div class="w-full h-full absolute top-0 left-0 opacity-80 bg-[#103f72]" alt=""></div>
+                    <div
+                        class="highlight-card-custom min-h-[230px] md:min-h-[280px] max-h-[390px] md:max-h-[370px] relative overflow-hidden">
+                        <span class="highlight-badge">Placement</span>
+                        <img src="assets/img/courses/course-4.jpg"
+                            class="w-full h-full absolute top-0 left-0 opacity-80 object-cover" alt="">
+                        <div class="w-full h-full absolute top-0 left-0 opacity-90 bg-[#103f72] z-10" alt=""></div>
                         <div class="relative z-10 flex flex-col items-center">
-                            <div class="highlight-icon-wrap">
-                                <!-- <i class="ri-user-star-line"></i> -->
-                                <img src="assets/img/highlight-section-img/multi-field.png" alt="" class="!w-12 lg:!w-14">
-                            </div>
                             <div class="highlight-title">Excel in Multiple Fields</div>
                             <div class="highlight-desc">Master diverse domains and expand your opportunities.</div>
                         </div>
                     </div>
                     <!-- Card 5 -->
-                    <div class="highlight-card-custom min-h-[230px] md:min-h-[280px] max-h-[390px] md:max-h-[370px] relative overflow-hidden">
-                        <div class="w-full h-full absolute top-0 left-0 opacity-80 bg-[#103f72]" alt=""></div>
+                    <div
+                        class="highlight-card-custom min-h-[230px] md:min-h-[280px] max-h-[390px] md:max-h-[370px] relative overflow-hidden">
+                        <span class="highlight-badge">Live</span>
+                        <img src="assets/img/courses/course-5.jpg"
+                            class="w-full h-full absolute top-0 left-0 opacity-80 object-cover" alt="">
+                        <div class="w-full h-full absolute top-0 left-0 opacity-90 bg-[#103f72] z-10" alt=""></div>
                         <div class="relative z-10 flex flex-col items-center">
-                            <div class="highlight-icon-wrap">
-                                <!-- <i class="ri-team-line"></i> -->
-                                <img src="assets/img/highlight-section-img/comunity.png" alt="" class="!w-12 lg:!w-14">
-                            </div>
                             <div class="highlight-title">Join a Thriving Community</div>
                             <div class="highlight-desc">Connect, collaborate, and grow with ambitious learners.</div>
                         </div>
@@ -425,16 +399,6 @@
         <section id="about-vtech" class="relative bg-white overflow-hidden">
             <img src="assets/img/highlight-banner.png" alt=""
                 class="w-full h-full object-cover absolute top-0 left-0 opacity-10">
-            <!-- Animated Blobs -->
-            <!-- <div
-                class="absolute top-0 -right-12 w-96 h-96 bg-[#ffddd9] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob">
-            </div>
-            <div
-                class="absolute top-0 -left-12 w-96 h-96 bg-[#ffeeed] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000">
-            </div>
-            <div
-                class="absolute -bottom-16 right-20 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-4000">
-            </div> -->
 
             <div class="container mx-auto relative z-10 py-24 md:py-28 px-5 md:px-10">
                 <div class="grid lg:grid-cols-9 gap-10 xl:gap-12">
@@ -485,20 +449,24 @@
                                     Student Rating</span>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <div class="flex -space-x-4">
-                                <img src="assets/img/courses/course-1.jpg"
-                                    class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
-                                <img src="assets/img/courses/course-2.jpg"
-                                    class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
-                                <img src="assets/img/courses/course-3.jpg"
-                                    class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
-                            </div>
-                            <div class="text-sm">
-                                <p class="font-semibold text-slate-800">500+ Students</p>
-                                <div class="flex items-center gap-1 text-slate-600">
-                                    <i class="fa-solid fa-star text-yellow-400"></i>
-                                    <span>4.9/5 Rating</span>
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-4 md:gap-20">
+                            <img src="assets/img/msme-logo/msme.png" alt="" class="w-fit h-20">
+
+                            <div class="flex items-center gap-4">
+                                <div class="flex -space-x-4">
+                                    <img src="assets/img/courses/course-1.jpg"
+                                        class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
+                                    <img src="assets/img/courses/course-2.jpg"
+                                        class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
+                                    <img src="assets/img/courses/course-3.jpg"
+                                        class="w-12 h-12 rounded-full border-2 border-white object-cover" alt="Student">
+                                </div>
+                                <div class="text-sm">
+                                    <p class="font-semibold text-slate-800">500+ Students</p>
+                                    <div class="flex items-center gap-1 text-slate-600">
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <span>4.9/5 Rating</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -561,114 +529,88 @@
         </section>
 
         <!-- Upcoming Batches Section-->
-        <section class="py-28">
+        <section class="upcoming-batches-section py-28">
             <div class="container mx-auto px-5 md:px-10">
                 <div class="flex items-center justify-center mb-8">
-                    <h2 class="text-2xl md:text-4xl font-[700] text-[#0e1d6e] text-center">Upcoming Batches</h2>
+                    <h2 class="text-2xl md:text-4xl font-[700] text-[#000000] text-center">Upcoming Batches</h2>
                 </div>
                 <!-- Category Pills -->
                 <div class="flex gap-3 mb-16 flex-wrap justify-center">
-                    <button class="batch-cat-pill active">All</button>
-                    <button class="batch-cat-pill">For Kids</button>
-                    <button class="batch-cat-pill">For Students</button>
-                    <button class="batch-cat-pill">For College</button>
-                    <button class="batch-cat-pill">For House Wife</button>
+                    <button class="batch-cat-pill active" data-category="all">All</button>
+                    <button class="batch-cat-pill" data-category="kids">For Kids</button>
+                    <button class="batch-cat-pill" data-category="students">For Students</button>
+                    <button class="batch-cat-pill" data-category="college">For College</button>
+                    <button class="batch-cat-pill" data-category="housewife">For House Wife</button>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
-                    <!-- Redesigned Batch Cards: Image flush, badge+icon overlay, minimal, moderate font -->
-                    <div class="batch-card-premium">
+                    <!-- Example: AUTOCAD for Students, College, All -->
+                    <div class="batch-card-premium batch-cat-all batch-cat-students batch-cat-college">
                         <div class="batch-card-img-wrap">
                             <img src="assets/img/courses/course-1.jpg" alt="AUTOCAD" class="batch-card-img">
-                            <div class="batch-card-overlay hidden">
-                                <span class="batch-card-icon-premium"><i class="ri-draft-line"></i></span>
-                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.9</span>
-                            </div>
                         </div>
                         <div class="batch-card-body">
                             <div class="batch-card-title-premium">AUTOCAD</div>
                             <div class="batch-card-info-premium">
-                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Ashok Vihar, New Delhi
-                                </div>
+                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Ashok Vihar, New Delhi</div>
                                 <div class="batch-card-info-row"><i class="ri-calendar-event-line"></i> 05-07-2025</div>
                             </div>
                         </div>
                         <div class="batch-card-footer">
-                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call
-                                Back</button>
+                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call Back</button>
                         </div>
                     </div>
-                    <div class="batch-card-premium">
+                    <!-- DATA SCIENCE for Students, College, All -->
+                    <div class="batch-card-premium batch-cat-all batch-cat-students batch-cat-college">
                         <div class="batch-card-img-wrap">
-                            <img src="assets/img/courses/course-2.jpg" alt="DATA SCIENCE & ML USING PYTHON"
-                                class="batch-card-img">
-                            <div class="batch-card-overlay hidden">
-                                <span class="batch-card-icon-premium"><i class="ri-brain-line"></i></span>
-                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.8</span>
-                            </div>
+                            <img src="assets/img/courses/course-2.jpg" alt="DATA SCIENCE & ML USING PYTHON" class="batch-card-img">
                         </div>
                         <div class="batch-card-body">
                             <div class="batch-card-title-premium">DATA SCIENCE & ML USING PYTHON</div>
                             <div class="batch-card-info-premium">
-                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Ashok Vihar, New Delhi
-                                </div>
+                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Ashok Vihar, New Delhi</div>
                                 <div class="batch-card-info-row"><i class="ri-calendar-event-line"></i> 05-07-2025</div>
                             </div>
                         </div>
                         <div class="batch-card-footer">
-                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call
-                                Back</button>
+                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call Back</button>
                         </div>
                     </div>
-                    <div class="batch-card-premium">
+                    <!-- KIDS CODING for Kids, All -->
+                    <div class="batch-card-premium batch-cat-all batch-cat-kids">
                         <div class="batch-card-img-wrap">
-                            <img src="assets/img/courses/course-3.jpg" alt="MERN STACK" class="batch-card-img">
-                            <div class="batch-card-overlay hidden">
-                                <span class="batch-card-icon-premium"><i class="ri-reactjs-line"></i></span>
-                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.7</span>
-                            </div>
+                            <img src="assets/img/courses/course-3.jpg" alt="KIDS CODING" class="batch-card-img">
                         </div>
                         <div class="batch-card-body">
-                            <div class="batch-card-title-premium">MERN STACK</div>
+                            <div class="batch-card-title-premium">KIDS CODING</div>
                             <div class="batch-card-info-premium">
-                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Ashok Vihar, New Delhi
-                                </div>
-                                <div class="batch-card-info-row"><i class="ri-calendar-event-line"></i> 05-07-2025</div>
+                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Ashok Vihar, New Delhi</div>
+                                <div class="batch-card-info-row"><i class="ri-calendar-event-line"></i> 10-07-2025</div>
                             </div>
                         </div>
                         <div class="batch-card-footer">
-                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call
-                                Back</button>
+                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call Back</button>
                         </div>
                     </div>
-                    <div class="batch-card-premium">
+                    <!-- HOUSEWIFE DIGITAL LITERACY for House Wife, All -->
+                    <div class="batch-card-premium batch-cat-all batch-cat-housewife">
                         <div class="batch-card-img-wrap">
-                            <img src="assets/img/courses/course-4.jpg" alt="CYBER SECURITY" class="batch-card-img">
-                            <div class="batch-card-overlay hidden">
-                                <span class="batch-card-icon-premium"><i class="ri-shield-keyhole-line"></i></span>
-                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.9</span>
-                            </div>
+                            <img src="assets/img/courses/course-4.jpg" alt="HOUSEWIFE DIGITAL LITERACY" class="batch-card-img">
                         </div>
                         <div class="batch-card-body">
-                            <div class="batch-card-title-premium">CYBER SECURITY</div>
+                            <div class="batch-card-title-premium">HOUSEWIFE DIGITAL LITERACY</div>
                             <div class="batch-card-info-premium">
-                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Ashok Vihar, New Delhi
-                                </div>
-                                <div class="batch-card-info-row"><i class="ri-calendar-event-line"></i> 05-07-2025</div>
+                                <div class="batch-card-info-row"><i class="ri-map-pin-line"></i> Ashok Vihar, New Delhi</div>
+                                <div class="batch-card-info-row"><i class="ri-calendar-event-line"></i> 15-07-2025</div>
                             </div>
                         </div>
                         <div class="batch-card-footer">
-                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call
-                                Back</button>
+                            <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call Back</button>
                         </div>
                     </div>
-                    <!-- Card 5 -->
-                    <div class="batch-card-premium">
+                    <!-- PYTHON PROGRAMMING for Students, College, All -->
+                    <div class="batch-card-premium batch-cat-all batch-cat-students batch-cat-college">
                         <div class="batch-card-img-wrap">
                             <img src="assets/img/courses/course-5.jpg" alt="PYTHON PROGRAMMING" class="batch-card-img">
-                            <div class="batch-card-overlay hidden">
-                                <span class="batch-card-icon-premium"><i class="ri-code-s-slash-line"></i></span>
-                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.8</span>
-                            </div>
                         </div>
                         <div class="batch-card-body">
                             <div class="batch-card-title-premium">PYTHON PROGRAMMING</div>
@@ -681,14 +623,10 @@
                             <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call Back</button>
                         </div>
                     </div>
-                    <!-- Card 6 -->
-                    <div class="batch-card-premium">
+                    <!-- BUSINESS ANALYTICS for College, All -->
+                    <div class="batch-card-premium batch-cat-all batch-cat-college">
                         <div class="batch-card-img-wrap">
                             <img src="assets/img/courses/course-6.jpg" alt="BUSINESS ANALYTICS" class="batch-card-img">
-                            <div class="batch-card-overlay hidden">
-                                <span class="batch-card-icon-premium"><i class="ri-bar-chart-2-line"></i></span>
-                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.7</span>
-                            </div>
                         </div>
                         <div class="batch-card-body">
                             <div class="batch-card-title-premium">BUSINESS ANALYTICS</div>
@@ -701,14 +639,10 @@
                             <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call Back</button>
                         </div>
                     </div>
-                    <!-- Card 7 -->
-                    <div class="batch-card-premium">
+                    <!-- JAVA FULL STACK for Students, College, All -->
+                    <div class="batch-card-premium batch-cat-all batch-cat-students batch-cat-college">
                         <div class="batch-card-img-wrap">
                             <img src="assets/img/courses/course-1.jpg" alt="JAVA FULL STACK" class="batch-card-img">
-                            <div class="batch-card-overlay hidden">
-                                <span class="batch-card-icon-premium"><i class="ri-java-line"></i></span>
-                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.8</span>
-                            </div>
                         </div>
                         <div class="batch-card-body">
                             <div class="batch-card-title-premium">JAVA FULL STACK</div>
@@ -721,14 +655,10 @@
                             <button class="batch-card-btn-premium"><i class="ri-phone-fill"></i> Request A Call Back</button>
                         </div>
                     </div>
-                    <!-- Card 8 -->
-                    <div class="batch-card-premium">
+                    <!-- UI/UX DESIGN for Students, All -->
+                    <div class="batch-card-premium batch-cat-all batch-cat-students">
                         <div class="batch-card-img-wrap">
                             <img src="assets/img/courses/course-2.jpg" alt="UI/UX DESIGN" class="batch-card-img">
-                            <div class="batch-card-overlay hidden">
-                                <span class="batch-card-icon-premium"><i class="ri-pencil-ruler-2-line"></i></span>
-                                <span class="batch-card-badge-rating"><i class="ri-star-fill"></i> 4.9</span>
-                            </div>
                         </div>
                         <div class="batch-card-body">
                             <div class="batch-card-title-premium">UI/UX DESIGN</div>
@@ -749,16 +679,6 @@
         <section class="relative bg-white overflow-hidden start-your-journey-section">
             <img src="assets/img/highlight-banner.png" alt=""
                 class="w-full h-full object-cover absolute top-0 left-0 opacity-10">
-            <!-- Animated Blobs -->
-            <!-- <div
-                class="absolute top-0 -right-12 w-96 h-96 bg-[#ffddd9] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob">
-            </div>
-            <div
-                class="absolute top-0 -left-12 w-96 h-96 bg-[#ffeeed] rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000">
-            </div>
-            <div
-                class="absolute -bottom-16 right-20 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-4000">
-            </div> -->
 
             <div class="container mx-auto relative z-20 py-32 px-5 md:px-10">
                 <div class="grid lg:grid-cols-9 gap-16 items-center">
@@ -926,8 +846,33 @@
         <!-- ======= Testimonials Section End ======= -->
     </main>
 
+    <!--mobile call us section -->
+    <div class="mobile-bottom-bar">
+        <a href="tel:919818734560" class="bottom-bar-icon bottom-call-icon phone" aria-label="Call">
+            <i class="ri-phone-fill"></i>
+        </a>
+        <a href="https://wa.me/919818734560" class="bottom-bar-icon whatsapp" aria-label="WhatsApp" target="_blank">
+            <i class="ri-whatsapp-line"></i>
+        </a>
+        <div class="bottom-bar-icon email" aria-label="Email">
+            <i class="ri-mail-line"></i>
+        </div>
+    </div>
+
+    <!-- Fixed WhatsApp & Call Button -->
+    <div id="fixed-contact-btns" class="!hidden shadow-md">
+        <div class="fixed-contact-btn-inner">
+            <a href="https://wa.me/919818734560" target="_blank" class="fixed-btn fixed-btn-whatsapp" title="WhatsApp">
+                <img src="assets/img/whatsapp.png" alt="" class="w-8">
+            </a>
+            <a href="tel:+919818734560" class="fixed-btn fixed-btn-call" title="Call">
+                <i class="ri-phone-fill"></i>
+            </a>
+        </div>
+    </div>
+
     <!-- Fixed Bottom Consultation Form: Only for lg and above -->
-    <div class="bottom-inquery-form hidden lg:flex fixed -bottom-full left-0 w-full z-50 transition-all duration-500">
+    <div class="bottom-inquery-form hidden xl:flex fixed -bottom-full left-0 w-full z-50 transition-all duration-500">
         <form class="bottom-inquery-form-inner flex w-full gap-4 items-center justify-center">
             <input type="text" placeholder="Your Name"
                 class="px-4 py-2 rounded-md bg-gray-50 border border-gray-200 focus:border-[#ffc500] focus:ring-2 focus:ring-[#ffc500]/20 outline-none transition-all bottom-inquery-form-input" />
@@ -949,6 +894,46 @@
         </form>
     </div>
     <!-- End Fixed Bottom Consultation Form -->
+
+    <!-- Mobile Consultation Popup Modal (hidden by default) -->
+    <div id="mobile-consultation-modal"
+        class="fixed inset-0 z-[99999] flex hidden items-center justify-center bg-black/40 backdrop-blur-sm md:hidden">
+        <div
+            class="bg-white w-[95vw] max-w-md p-6 rounded-2xl shadow-xl border border-gray-100 relative animate-fade-in">
+            <button id="close-mobile-consultation"
+                class="absolute top-3 right-3 text-2xl text-gray-400 hover:text-red-500">&times;</button>
+            <h2 class="text-2xl font-bold text-slate-800 mb-2">Start Your Journey Today</h2>
+            <p class="text-slate-600 mb-6">Schedule a free consultation with our career advisors</p>
+            <form class="space-y-4">
+                <div>
+                    <input type="text" placeholder="Full Name"
+                        class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#686868] focus:ring-2 focus:ring-[#686868]/20 outline-none transition-all">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email Address"
+                        class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#686868] focus:ring-2 focus:ring-[#686868]/20 outline-none transition-all">
+                </div>
+                <div>
+                    <input type="tel" placeholder="Phone Number"
+                        class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#686868] focus:ring-2 focus:ring-[#686868]/20 outline-none transition-all">
+                </div>
+                <div>
+                    <select
+                        class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-[#686868] focus:ring-2 focus:ring-[#686868]/20 outline-none transition-all">
+                        <option value="">Select Course Interest</option>
+                        <option value="web">Web Development</option>
+                        <option value="app">App Development</option>
+                        <option value="data">Data Science</option>
+                        <option value="ai">AI & Machine Learning</option>
+                    </select>
+                </div>
+                <button type="submit"
+                    class="w-full btn-primary justify-center font-[500] gap-3 text-xs sm:text-sm px-5">
+                    <i class="fa-regular fa-calendar-check md:text-lg"></i> Schedule Free Consultation
+                </button>
+            </form>
+        </div>
+    </div>
 
     <!-- ======= Footer Start ======= -->
     <footer class="footer-main-bg">
@@ -977,7 +962,6 @@
                         <li><a href="#about"><i class="ri-information-line"></i> About Us</a></li>
                         <li><a href="#gallery"><i class="ri-image-line"></i> Gallery</a></li>
                         <li><a href="#faq"><i class="ri-question-answer-line"></i> FAQ</a></li>
-                        <li><a href="#blog"><i class="ri-article-line"></i> Blog</a></li>
                         <li><a href="#contact"><i class="ri-contacts-book-line"></i> Contact Us</a></li>
                     </ul>
                 </div>
@@ -1009,17 +993,17 @@
                         <hr class="footer-contact-divider">
                         <div class="footer-contact-row">
                             <span class="footer-contact-icon"><i class="ri-phone-fill"></i></span>
-                            <span class="footer-contact-text">91+ 9818734560<br>91+ 9212229400</span>
+                            <span class="footer-contact-text"><a href="tel:+919818734560">91+ 9818734560</a></span>
                         </div>
                         <hr class="footer-contact-divider">
                         <div class="footer-contact-row">
                             <span class="footer-contact-icon"><i class="ri-mail-fill"></i></span>
-                            <span class="footer-contact-text">vtechaocwebmail@gmail.com</span>
+                            <span class="footer-contact-text"><a href="mailto:vtechaocwebmail@gmail.com">vtechaocwebmail@gmail.com</a></span>
                         </div>
                         <hr class="footer-contact-divider">
                         <div class="footer-contact-row">
                             <span class="footer-contact-icon"><i class="ri-time-fill"></i></span>
-                            <span class="footer-contact-text">Office Timings: 10:00 AM to 7:00 PM (Monday to
+                            <span class="footer-contact-text">Office Timings: 09:00 AM to 7:00 PM (Monday to
                                 Saturday)</span>
                         </div>
                     </div>
